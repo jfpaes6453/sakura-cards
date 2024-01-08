@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+README - Sakura Tarot Page 🔮🌸
 
-First, run the development server:
+Welcome to our enchanting Sakura Tarot page! 🌟
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🧙 This page offers a unique tarot reading experience, allowing you to explore the mysteries of the past, present, and future through the cards of the Sakura Deck. The blend of ancient tarot wisdom with the captivating aesthetics of Sakura creates a magical environment for your quest for answers and self-discovery.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🖥️ How It Works
+Choose your cards:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+🌌 Select a card to represent your past.
+🌟 Choose another card to symbolize your present.
+🌈 Pick a third card to glimpse into your future.
+Discover the meanings:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+After making your choices, explore the meanings of each selected card. Our page will provide detailed and insightful interpretations, based on tarot tradition and enriched with the unique essence of the Sakura Deck.
 
-## Learn More
+🛠️ Technologies Used
+This project has been developed using the following technologies:
 
-To learn more about Next.js, take a look at the following resources:
+JavaScript (🌐): The core of the logic and interactivity of the tarot is implemented using JavaScript, providing a smooth and dynamic experience for users.
+React (⚛️): The user interface has been built with React, a JavaScript library that facilitates the creation of reusable components and efficient state management.
+Next.js (🚀): Next.js is used to optimize the page's performance through server-side rendering and static generation, ensuring fast loading and an enhanced user experience.
+Vites (🌀): The rapid and efficient construction of the application has been achieved with Vites, a tool that facilitates the development of modern web applications.
+Cypress (⚙️): To ensure code quality and reliability, tests have been implemented with Cypress, a powerful end-to-end testing tool.
+📘 Execution Instructions
+Clone this repository to your local machine.
+Install dependencies with the command npm install.
+Run the application with npm run dev.
+Open your browser and visit http://localhost:3000.
+Dive into the magical world of tarot with the Sakura Deck and discover the answers the universe has reserved for you! 🌈✨
+----------------------------------------------------------------------------------------------
+¡Bienvenido a nuestra fascinante página de tarot con la Baraja de Sakura! 🌟
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🧙 
+Esta página ofrece una experiencia única de lectura de tarot, permitiéndote explorar los misterios del pasado, presente y futuro a través de las cartas de la Baraja de Sakura. La combinación de la antigua sabiduría del tarot con la estética cautivadora de Sakura crea un entorno mágico para tu búsqueda de respuestas y autoconocimiento.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+🖥️ Cómo funciona
+Selecciona tus cartas:
 
-## Deploy on Vercel
+🌌 Elige una carta para representar tu pasado.
+🌟 Selecciona otra carta para simbolizar tu presente.
+🌈 Elige una tercera carta para vislumbrar tu futuro.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Descubre los significados:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Después de hacer tus elecciones, explora los significados de cada carta seleccionada. Nuestra página te proporcionará interpretaciones detalladas y perspicaces, basadas en la tradición del tarot y enriquecidas con la esencia única de la Baraja de Sakura.
+
+🛠️Tecnologías Utilizadas:
+Este proyecto se ha desarrollado utilizando las siguientes tecnologías:
+
+*JavaScript: El núcleo de la lógica y la interactividad del tarot se ha implementado    utilizando JavaScript, permitiendo una experiencia fluida y dinámica para los usuarios.
+
+*React: La interfaz de usuario ha sido construida con React, una biblioteca de JavaScript que facilita la creación de componentes reutilizables y la gestión eficiente del estado de la aplicación.
+
+*Next.js: Hemos utilizado Next.js para optimizar el rendimiento de la página mediante el rendimiento del lado del servidor y la generación estática. Esto garantiza una carga rápida y una experiencia de usuario mejorada.
+
+*Vites: La construcción rápida y eficiente de la aplicación se ha logrado con Vites, una herramienta que facilita el desarrollo de aplicaciones web modernas.
+
+*Cypress: Para asegurar la calidad y fiabilidad del código, hemos implementado pruebas con Cypress, una potente herramienta de pruebas end-to-end.
+
+📘 Instrucciones de Ejecución
+
+Clona este repositorio en tu máquina local.
+Instala las dependencias con el comando npm install.
+Ejecuta la aplicación con npm run dev.
+Abre tu navegador y visita http://localhost:3000.
+¡Sumérgete en el mágico mundo del tarot con la Baraja de Sakura y descubre las respuestas que el universo tiene reservadas para ti! 🌈✨
+
