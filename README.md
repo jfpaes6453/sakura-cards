@@ -1,34 +1,37 @@
-
-README - Sakura Tarot Page 🔮🌸
-
 Welcome to our enchanting Sakura Tarot page! 🌟
 
-🧙 This page offers a unique tarot reading experience, allowing you to explore the mysteries of the past, present, and future through the cards of the Sakura Deck. The blend of ancient tarot wisdom with the captivating aesthetics of Sakura creates a magical environment for your quest for answers and self-discovery.
+🧙 This page offers a unique tarot reading experience, allowing you to explore the mysteries of the past, present, and future through the cards of the Sakura Deck. The combination of ancient tarot wisdom with the captivating aesthetic of Sakura creates a magical environment for your quest for answers and self-discovery.
 
-🖥️ How It Works
-Choose your cards:
+🖥️ How it Works: Select Your Cards:
 
-🌌 Select a card to represent your past.
-🌟 Choose another card to symbolize your present.
-🌈 Pick a third card to glimpse into your future.
-Discover the meanings:
+🌌 Choose a card to represent your past.
+🌟 Select another card to symbolize your present.
+🌈 Choose a third card to glimpse into your future.
 
-After making your choices, explore the meanings of each selected card. Our page will provide detailed and insightful interpretations, based on tarot tradition and enriched with the unique essence of the Sakura Deck.
+Discover the Meanings:
 
-🛠️ Technologies Used
-This project has been developed using the following technologies:
+After making your choices, explore the meanings of each selected card. Our page will provide detailed and insightful interpretations based on tarot tradition, enriched with the unique essence of the Sakura Deck.
 
-JavaScript (🌐): The core of the logic and interactivity of the tarot is implemented using JavaScript, providing a smooth and dynamic experience for users.
-React (⚛️): The user interface has been built with React, a JavaScript library that facilitates the creation of reusable components and efficient state management.
-Next.js (🚀): Next.js is used to optimize the page's performance through server-side rendering and static generation, ensuring fast loading and an enhanced user experience.
-Vites (🌀): The rapid and efficient construction of the application has been achieved with Vites, a tool that facilitates the development of modern web applications.
-Cypress (⚙️): To ensure code quality and reliability, tests have been implemented with Cypress, a powerful end-to-end testing tool.
-📘 Execution Instructions
+🛠️ Technologies Used: This project has been developed using the following technologies:
+
+JavaScript: The core logic and interactivity of the tarot have been implemented using JavaScript, enabling a smooth and dynamic experience for users.
+
+React: The user interface has been built with React, a JavaScript library that facilitates the creation of reusable components and efficient state management.
+
+Next.js: We have used Next.js to optimize page performance through server-side rendering and static generation. This ensures fast loading and an enhanced user experience.
+
+Vite: The rapid and efficient building of the application has been achieved with Vite, a tool that facilitates the development of modern web applications.
+
+Cypress: To ensure code quality and reliability, we have implemented tests with Cypress, a powerful end-to-end testing tool.
+
+📘 Execution Instructions:
+
 Clone this repository to your local machine.
 Install dependencies with the command npm install.
 Run the application with npm run dev.
 Open your browser and visit http://localhost:3000.
-Dive into the magical world of tarot with the Sakura Deck and discover the answers the universe has reserved for you! 🌈✨
+Immerse yourself in the magical world of tarot with the Sakura Deck and discover the answers that the universe has in store for you! 🌈✨
+
 ----------------------------------------------------------------------------------------------
 ¡Bienvenido a nuestra fascinante página de tarot con la Baraja de Sakura! 🌟
 
