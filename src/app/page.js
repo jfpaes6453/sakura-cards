@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Image from 'next/image'
 
 export default function Home() {
@@ -108,6 +109,14 @@ export default function Home() {
           </p>
         </a>
       </div>
+=======
+
+
+export default function Home() {
+  return (
+    <main className="flex min-h-screen flex-col items-center justify-between pt-10">
+      <h1 className={`text-[5.25rem] text-font-color`}>Instrucciones</h1>
+>>>>>>> feature-footer
     </main>
   )
 }

@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+<<<<<<< HEAD
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -25,3 +26,5 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+=======
+>>>>>>> feature-footer

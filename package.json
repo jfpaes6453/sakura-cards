@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "sakura-cards",
+=======
+  "name": "sakura-tarot",
+>>>>>>> feature-footer
   "version": "0.1.0",
   "private": true,
   "scripts": {
