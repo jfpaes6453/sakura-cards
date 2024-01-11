@@ -1,4 +1,3 @@
-
 Welcome to our enchanting Sakura Tarot page! 🌟
 
 🧙 This page offers a unique tarot reading experience, allowing you to explore the mysteries of the past, present, and future through the cards of the Sakura Deck. The combination of ancient tarot wisdom with the captivating aesthetic of Sakura creates a magical environment for your quest for answers and self-discovery.
