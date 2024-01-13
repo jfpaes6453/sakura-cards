@@ -40,10 +40,12 @@ function CardReading() {
         return <p>Error al cargar los datos</p>;
     }
 
+    const subtitleTime = ['pasado', 'presente', 'futuro']
+
     return (
         <div>
             <ul className="mx-36 my-20">
-                {randomCards.map((card) => (
+                {randomCards.map((card, index) => (
                         <li className="flex flex-row my-8 py-7 items-center">
                             <Card
                             key={card.id}
@@ -58,7 +60,7 @@ function CardReading() {
                                 <div className="flex gap-10 items-center">
 
                                     <div className="flex flex-col ">
-                                        <h3 className="text-4xl">El {card[0]}</h3>
+                                        <h3 className="text-4xl">El {subtitleTime[index]}</h3>
                                         <h4 className="text-fill text-[42px]">{card.spanishName}</h4>
                                     </div>
                                     <h5 className={`${inder.className} text-[70px] opacity-[.69] text-fill`}>{card.kanji}</h5>
