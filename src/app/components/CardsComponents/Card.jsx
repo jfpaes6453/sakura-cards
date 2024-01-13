@@ -15,12 +15,13 @@ const Card = ({ id, name, src, onSelect, isSelected, style }) => {
             
         }}
     >
+        
         <Image 
         src={src} 
         width={150} 
-        height={150} 
+        height={250} 
         alt={name} 
-        className="rounded-2xl hover:hover:translatey(-30%)" />
+        className="rounded-2xl hover:translatey(-30%) max-w-none " />
     </div>
     );
 };
