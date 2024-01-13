@@ -21,7 +21,7 @@ const Card = ({ id, name, src, onSelect, isSelected, style }) => {
         width={150} 
         height={250} 
         alt={name} 
-        className="rounded-2xl hover:translatey(-30%) max-w-none " />
+        className="rounded-2xl max-w-none hover:translatey(-30%)" />
     </div>
     );
 };

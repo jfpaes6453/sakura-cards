@@ -8,12 +8,15 @@ import { useRouter } from 'next/navigation'
 
 function CardDown() {
     const urlApi = 'https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/';
-    const { data } = useFetch(urlApi);
+    const { data, loading } = useFetch(urlApi);
     const excludedIds = ['53', '55']
-
+   
     const router = useRouter()
 
     const [selectedCards, setSelectedCards] = useState([]);
+    if (loading) {
+        return <p className="text-[3.5rem] mx-28">Cargando...</p>;
+    }
 
     const handleCardSelect = (cardId) => {
         if (selectedCards.length < 3 && !selectedCards.includes(cardId)) {
@@ -56,7 +59,7 @@ function CardDown() {
                 } else {
                     const angle = (index / filteredData.length + 1) * Math.PI;
                     const radius = 550;
-                    const centerX = 550;
+                    const centerX = 480;
                     const centerY = 400;
                     const x = centerX + radius * Math.cos(angle);
                     const y = centerY + radius * Math.sin(angle);

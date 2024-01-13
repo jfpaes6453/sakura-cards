@@ -10,6 +10,7 @@ import { Noto_Serif_JP } from "next/font/google";
 const inder = Noto_Serif_JP({ weight: ['200'],
 subsets: ['latin']})
 
+
 function CardReading() {
     const [randomCards, setRandomCards] = useState([])
 
@@ -28,8 +29,7 @@ function CardReading() {
         
         setRandomCards(cards)
         localStorage.setItem('selectedRandomCards', JSON.stringify(cards))
-       
-        console.log(cards[0])
+
     }, [data])
 
     if (loading) {
@@ -42,8 +42,7 @@ function CardReading() {
 
     return (
         <div>
-            <h2 className="text-[3.5rem] mx-36 pt-20">La respuesta a tu pregunta</h2>
-            <ul className="m-36">
+            <ul className="mx-36 my-20">
                 {randomCards.map((card) => (
                         <li className="flex flex-row my-8 py-7 items-center">
                             <Card
