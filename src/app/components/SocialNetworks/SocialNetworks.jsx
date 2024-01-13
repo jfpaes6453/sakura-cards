@@ -25,10 +25,10 @@ const socialNetworks = [
 ]
 
 
-export default function SocialNetworks({customClass}) {
+export default function SocialNetworks() {
     
     return(
-        <div className={`${customClass} md:flex flex-row`}>
+        <div className='flex flex-row'>
             {
                 socialNetworks.map((network) => (
                 <a key={network.name} href={network.url} target="_blank" className="p-3">
