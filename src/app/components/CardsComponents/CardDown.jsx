@@ -13,7 +13,8 @@ function CardDown() {
    
     const router = useRouter()
 
-    const [selectedCards, setSelectedCards] = useState([]);
+    const [selectedCards, setSelectedCards] = useState([])
+    
     if (loading) {
         return <p className="text-[3.5rem] mx-28">Cargando...</p>;
     }
