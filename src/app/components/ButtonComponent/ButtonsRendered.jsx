@@ -9,7 +9,7 @@ const ButtonsRendered = () => {
         localStorage.removeItem('selectedRandomCards')
         router.push('/choose-card')
     }
-  return (
+    return (
     <div className="flex flex-col ml-8">
         
         <button onClick={handleReset} className="flex flex-row items-center text-3xl
