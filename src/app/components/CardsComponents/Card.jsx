@@ -1,13 +1,12 @@
-// Card.jsx
 import Image from 'next/image';
 
-const Card = ({ id, name, src, onSelect, isSelected, style }) => {
+export default function Card ({ id, name, src, onSelect, isSelected, style }) {
     const handleClick = () => {
         onSelect(id);
     };
 
     return (
-    <div
+    <section
         className={`card ${isSelected ? 'selected' : ''}`}
         onClick={handleClick}
         style={{
@@ -15,15 +14,12 @@ const Card = ({ id, name, src, onSelect, isSelected, style }) => {
             
         }}
     >
-        
         <Image 
         src={src} 
         width={150} 
         height={250} 
         alt={name} 
         className="rounded-2xl max-w-none hover:translatey(-30%)" />
-    </div>
+    </section>
     );
 };
-
-export default Card;

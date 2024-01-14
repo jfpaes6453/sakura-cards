@@ -6,15 +6,15 @@ import Card from './Card';
 import './index.css';
 import { useRouter } from 'next/navigation'
 
-function CardDown() {
+export default function CardDown() {
     const urlApi = 'https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/';
     const { data, loading } = useFetch(urlApi);
     const excludedIds = ['53', '55']
-   
+
     const router = useRouter()
 
     const [selectedCards, setSelectedCards] = useState([])
-    
+
     if (loading) {
         return <p className="text-[3.5rem] mx-28">Cargando...</p>;
     }
@@ -24,7 +24,7 @@ function CardDown() {
             setSelectedCards([...selectedCards, cardId]);
         }
         if (selectedCards.length === 3) {
-            
+
             router.push(`/reading?carta1=${selectedCards[0]}&carta2=${selectedCards[1]}&carta3=${selectedCards[2]}`);
         }
     }
@@ -36,27 +36,15 @@ function CardDown() {
             {filteredData.map((card, index) => {
                 const isSelected = selectedCards.includes(card.id);
                 let style = {}
-
                 if (isSelected) {
-                    switch (selectedCards.indexOf(card.id)) {
-                        case 0:
-                            style = {
-                                transform: 'translate(50%, 50%) translate(280px, 650px)',
-                            };
-                            break;
-                        case 1:
-                            style = {
-                                transform: 'translate(50%, 50%) translate(510px, 650px)',
-                            };
-                            break;
-                        case 2:
-                            style = {
-                                transform: 'translate(50%, 50%) translate(740px, 650px)',
-                            };
-                            break;
-                        default:
-                            break;
-                    }
+                    const positions = [
+                        { x: 280, y: 650 },
+                        { x: 510, y: 650 },
+                        { x: 740, y: 650 },
+                    ];
+                    style = { 
+                        transform: `translate(50%, 50%) translate(${positions[selectedCards.indexOf(card.id)].x}px, ${positions[selectedCards.indexOf(card.id)].y}px)`,
+                    };
                 } else {
                     const angle = (index / filteredData.length + 1) * Math.PI;
                     const radius = 550;
@@ -84,5 +72,3 @@ function CardDown() {
         </div>
     );
 }
-
-export default CardDown
