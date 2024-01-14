@@ -8,7 +8,7 @@ const Card = ({ id, name, src, onSelect, isSelected, style }) => {
 
     return (
     <div
-        className={`card ${isSelected ? 'selected' : ''}`}
+        className={`absolute ${isSelected ? 'selected' : ''}`}
         onClick={handleClick}
         style={{
             ...style,
@@ -18,10 +18,10 @@ const Card = ({ id, name, src, onSelect, isSelected, style }) => {
         
         <Image 
         src={src} 
-        width={150} 
-        height={250} 
+        width={170} 
+        height={300} 
         alt={name} 
-        className="rounded-2xl max-w-none hover:translatey(-30%)" />
+        className="w-aut h-auto object-cover rounded-2xl max-w-none shadow-md cursor-pointer transition-transform duration-300 ease-in-out transform hover:translatey(-30%) hover:scale-110" />
     </div>
     );
 };
