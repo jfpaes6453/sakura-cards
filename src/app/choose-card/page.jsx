@@ -2,6 +2,7 @@
 
 import ButtonsRendered from "../components/ButtonComponent/ButtonsRendered";
 import CardDown from "../components/CardsComponents/CardDown";
+import CardFan from "../components/CardsComponents/CardFan";
 
 
 
@@ -19,7 +20,8 @@ export default function chooseCard() {
             </div>
         </aside>
         
-        <CardDown/>
+        {/* <CardDown/> */}
+        <CardFan />
         </>
     )
 

@@ -46,7 +46,7 @@ function CardDown() {
             <section className="card-fan">
                 <h3 className='md:text-5xl text-4xl flex items-center justify-center'>{subtitleCard}</h3>
                 {filteredData.map((card, index) => {
-                    const isSelected = selectedCards.includes(card.id);
+                    const isSelected = selectedCards.includes(card.id)
                     let style = {}
 
                     if (isSelected) {
