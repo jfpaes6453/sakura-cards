@@ -1,6 +1,6 @@
 .card-fan {
   position: relative;
-  margin: 40px auto;
+  
   height: 1287px /* Centra el abanico horizontalmente */
 }
 
@@ -25,3 +25,16 @@
   transform: scale(1.1) translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5)
 }
+
+@media (max-width: 768px) {
+  .card-fan{
+    width: 50%;
+    height: 500px;
+  }
+  /* .card img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    cursor: pointer
+  } */
+ }
