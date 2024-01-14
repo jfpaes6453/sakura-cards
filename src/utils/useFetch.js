@@ -3,19 +3,22 @@
 import { useState, useEffect } from 'react';
 
 const useFetch = (url) => {
-  const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [data, setData] = useState(null)
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(null)
+
+  
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(url);
+        const response = await fetch(url)
         if (!response.ok) {
           throw new Error('Error al obtener datos de la API');
         }
-        const result = await response.json();
-        setData(result);
+        const result = await response.json()
+        setData(result)
+      
       } catch (error) {
         setError(error);
       } finally {
@@ -23,7 +26,6 @@ const useFetch = (url) => {
       }
     };
 
-    // Verificar si estamos en el lado del cliente antes de hacer la llamada a la API
     if (typeof window !== 'undefined') {
       fetchData();
     }
