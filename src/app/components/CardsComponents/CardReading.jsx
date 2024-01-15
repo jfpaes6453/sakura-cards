@@ -4,10 +4,10 @@ import { useState, useEffect } from "react";
 import { getRandomCards } from "@/utils/cardUtils"
 import useFetch from "@/utils/useFetch";
 import Card from "./Card"
-import { Noto_Serif_JP } from "next/font/google";
+import { Zen_Kurenaido } from "next/font/google";
 
 
-const inder = Noto_Serif_JP({ weight: ['200'],
+const kanji = Zen_Kurenaido({ weight: ['200'],
 subsets: ['latin']})
 
 
@@ -62,7 +62,7 @@ function CardReading() {
                                         <h3 className="text-4xl md:text-center my-6 md:my-0">El {subtitleTime[index]}</h3>
                                         <h4 className="text-fill text-[42px]">{card.spanishName}</h4>
                                     </div>
-                                    <h5 className={`${inder.className} text-[70px] opacity-[.69] text-fill`}>{card.kanji}</h5>
+                                    <h5 className={`${kanji.className} text-[70px] opacity-[.69] text-fill`}>{card.kanji}</h5>
                                 </div>
                                 <p className="text-fill text-3xl my-6 text-center md:text-justify">{card.meaning}</p>
                                 <hr className="md:mt-36"/>
