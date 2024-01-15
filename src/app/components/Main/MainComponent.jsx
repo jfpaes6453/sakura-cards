@@ -4,8 +4,8 @@ import ButtonComponent from "../ButtonComponent/ButtonComponent";
 export default function MainComponent() {
   return (
     <div>
-      <nav className="flex items-center gap-40 mb-11">
-        <Link href="/choose-card">
+      <nav className="flex items-center gap-40 mb-11 md:h-full md:w-20" >
+        <Link href="/choose-card" className="hidden sm:block">
           <ButtonComponent text={"Empezar"} />
         </Link>
         <div className="items-center mt-10">
@@ -13,11 +13,11 @@ export default function MainComponent() {
           <h2 className={`text-[3rem] text-center text-font-color mt-5`}>Instrucciones</h2>
         </div>
       </nav>
-      <section className="grid grid-flow-col auto-cols-max gap-20 mt-10 ">
-        <img src="/img/pngwing.png" className="w-13.188 h-140 mb-20" />
-        <section className="gap-5 max-w-xl ml-25">
+      <section className="flex flex-col sm:flex-row items-center gap-20 mt-10">
+  <img src="/img/pngwing.png" className="w-13.188 h-140 mb-5 sm:mb-0  " />
+  <section className="max-w-xl">
           <div className="p-5 cm:flex cm:colunm">
-            <p className="text-[1.5em] text-font-color">
+            <p className="text-[1.5em] text-font-color  sm:ml-7">
               ¡Bienvenido a nuestra plataforma de tarot! Descubre las
               revelaciones del pasado, presente y futuro con las cartas clown.
               Sigue estos sencillos pasos para obtener tu lectura personalizada.
@@ -33,6 +33,9 @@ export default function MainComponent() {
               cartas guíen tu viaje!
             </p>
           </div>
+             <Link href="/choose-card">
+          <ButtonComponent text={"Empezar"} />
+        </Link>
         </section>
       </section>
     </div>
