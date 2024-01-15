@@ -1,99 +1,79 @@
-'use client'
-
 import { useState } from 'react';
 import useFetch from '../../../utils/useFetch';
 import Card from './Card';
-import './index.css';
-import { useRouter } from 'next/navigation'
+import { useRouter } from 'next/navigation';
 
 export default function CardDown() {
-    const urlApi = 'https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/';
-    const { data, loading } = useFetch(urlApi);
-    const excludedIds = ['53', '55']
+  const urlApi = 'https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/';
+  const { data, loading } = useFetch(urlApi);
+  const excludedIds = ['53', '55'];
+  const router = useRouter();
 
-    const router = useRouter()
+  const [selectedCards, setSelectedCards] = useState([]);
+  const [subtitleCard, setSubtitleCard] = useState('para el pasado');
 
-    const [selectedCards, setSelectedCards] = useState([])
-    const [subtitleCard, setSubtitleCard] = useState('para el pasado')
+  if (loading) {
+    return <p className="text-[3.5rem] mx-28">Cargando...</p>;
+  }
 
-    if (loading) {
-        return <p className="text-[3.5rem] mx-28">Cargando...</p>;
+  const handleCardSelect = (cardId) => {
+    if (selectedCards.length < 3 && !selectedCards.includes(cardId)) {
+      setSelectedCards([...selectedCards, cardId]);
     }
 
-    const handleCardSelect = (cardId) => {
-        if (selectedCards.length < 3 && !selectedCards.includes(cardId)) {
-            setSelectedCards([...selectedCards, cardId]);
-        }
-        if (selectedCards.length === 0) {
-            setSubtitleCard('para el presente');
-        } else if (selectedCards.length === 1) {
-            setSubtitleCard('para el futuro');
-        } else if (selectedCards.length === 2) {
-            setSubtitleCard('Tu lectura')
-            
-            
-        }
-        if(selectedCards.length === 3){
-            router.push(`/reading?carta1=${selectedCards[0]}&carta2=${selectedCards[1]}&carta3=${selectedCards[2]}`);
-        }
+    const subtitles = ['para el presente', 'para el futuro', 'Tu lectura'];
+    setSubtitleCard(subtitles[selectedCards.length] || subtitleCard);
+
+    if (selectedCards.length === 3) {
+      const queryParams = selectedCards.map((card, index) => `carta${index + 1}=${card}`).join('&');
+      router.push(`/reading?${queryParams}`);
     }
+  };
 
-    const filteredData = data ? data.filter(card => !excludedIds.includes(card.id)) : [];
+  const filteredData = data ? data.filter((card) => !excludedIds.includes(card.id)) : [];
 
-    return (
-        <div className='md:w-full md:h-full'>
-            
-            <section className="card-fan">
-                <h3 className='md:text-5xl text-4xl flex items-center justify-center'>{subtitleCard}</h3>
-                {filteredData.map((card, index) => {
-                    const isSelected = selectedCards.includes(card.id)
-                    let style = {}
+  const calculateCardPosition = (isSelected, cardId, index) => {
+    const positions = [
+      { x: 260, y: 300 },
+      { x: 480, y: 300 },
+      { x: 700, y: 300 },
+    ];
+  
+    const selectedCardIndex = selectedCards.indexOf(cardId);
+    const position = selectedCardIndex !== -1 ? positions[selectedCardIndex] : { x: 0, y: 0 };
+  
+    const unselectedX = 520 + 560 * Math.cos((index / filteredData.length + 1) * Math.PI);
+    const unselectedY = 200 + 300 * Math.sin((index / filteredData.length + 1) * Math.PI);
+  
+    return isSelected
+      ? `translate(50%, 50%) translate(${position.x}px, ${position.y}px)`
+      : `translate(50%, 50%) translate(${unselectedX}px, ${unselectedY}px)`;
+  };
+  
 
-                    if (isSelected) {
-                        switch (selectedCards.indexOf(card.id)) {
-                            case 0:
-                                style = {
-                                    transform: 'translate(50%, 50%) translate(280px, 650px)',
-                                };
-                                break;
-                            case 1:
-                                style = {
-                                    transform: 'translate(50%, 50%) translate(510px, 650px)',
-                                };
-                                break;
-                            case 2:
-                                style = {
-                                    transform: 'translate(50%, 50%) translate(740px, 650px)',
-                                };
-                                break;
-                            default:
-                                break;
-                        }
-                    } else {
-                        const angle = (index / filteredData.length + 1) * Math.PI;
-                        const radius = 550;
-                        const centerX = 480;
-                        const centerY = 400;
-                        const x = centerX + radius * Math.cos(angle);
-                        const y = centerY + radius * Math.sin(angle);
-                        style = {
-                            transform: `translate(50%, 50%) translate(${x}px, ${y}px)`,
-                        };
-                    }
+  return (
+    <div className="md:w-full md:h-full">
+      <section className="relative h-[800px] w-screen">
+        <h3 className="text-center md:text-5xl text-4xl">{subtitleCard}</h3>
+        {filteredData.map((card, index) => {
 
-                    return (
-                        <Card
-                            key={card.id}
-                            id={card.id}
-                            name={card.spanishName}
-                            onSelect={handleCardSelect}
-                            isSelected={isSelected}
-                            style={style}
-                            src={card.cardsReverse.clowReverse}
-                        />
-                    );
-                })}
-            </section>
-        </div>
-    );
+          const isSelected = selectedCards.includes(card.id);
+          const style = { transform: calculateCardPosition(isSelected, card.id, index) };
+
+          return (
+            <Card
+              key={card.id}
+              id={card.id}
+              name={card.spanishName}
+              onSelect={handleCardSelect}
+              isSelected={isSelected}
+              style={style}
+              src={card.cardsReverse.clowReverse}
+            />
+          );
+
+        })}
+      </section>
+    </div>
+  );
 }

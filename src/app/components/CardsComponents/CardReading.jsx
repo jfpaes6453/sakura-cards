@@ -11,7 +11,7 @@ const inder = Noto_Serif_JP({ weight: ['200'],
 subsets: ['latin']})
 
 
-function CardReading() {
+export default function CardReading() {
     const [randomCards, setRandomCards] = useState([])
 
     const urlApi = 'https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/'
@@ -73,6 +73,4 @@ function CardReading() {
         </div>
     );
 }
-
-export default CardReading;
 
