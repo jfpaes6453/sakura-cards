@@ -12,7 +12,7 @@ export default function Card({ id, name, src, onSelect, isSelected, style }) {
             style={{
                 ...style,
                 width: '170px',
-                height: '300px',
+                height: '350px',
             }}
         >
             <Image

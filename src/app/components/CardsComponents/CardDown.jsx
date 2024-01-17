@@ -66,8 +66,11 @@ const calculateUnselectedCardPosition = (index) => {
   const calculateCardPosition = (isSelected, cardId, index) => {
     const position = isSelected ? cardPositions[cardId] : calculateUnselectedCardPosition(index);
 
+    const adjustedY = isSelected ? position.y + 150 : position.y
+    const adjustedx = isSelected ? position.y + 100 : position.y
+
     return isSelected
-      ? `translate(50%, 50%) translate(${position.x}px, ${position.y}px)`
+      ? `translate(50%, 50%) translate(${position.x}px, ${adjustedY}px)`
       : `translate(50%, 50%) translate(${position.x}px, ${position.y}px)`;
   };
 
@@ -77,7 +80,7 @@ const calculateUnselectedCardPosition = (index) => {
 
   return (
     <div className="flex justify-center items-center  relative md:w-full h-full">
-      <section className="relative h-[950px] w-screen">
+      <section className="relative h-[1100px] w-screen">
         <h3 className="text-center md:text-5xl text-4xl">{subtitleCard}</h3>
         {filteredData.map((card, index) => {
           const isSelected = selectedCards.includes(card.id);
