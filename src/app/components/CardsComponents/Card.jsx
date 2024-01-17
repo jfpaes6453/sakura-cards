@@ -11,8 +11,8 @@ export default function Card({ id, name, src, onSelect, isSelected, style }) {
             onClick={handleClick}
             style={{
                 ...style,
-                width: '115px',
-                height: '159.55px',
+                width: '170px',
+                height: '300px',
             }}
         >
             <Image

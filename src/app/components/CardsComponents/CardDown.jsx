@@ -77,7 +77,7 @@ const calculateUnselectedCardPosition = (index) => {
 
   return (
     <div className="flex justify-center items-center  relative md:w-full h-full">
-      <section className="relative h-[400px] w-screen">
+      <section className="relative h-[950px] w-screen">
         <h3 className="text-center md:text-5xl text-4xl">{subtitleCard}</h3>
         {filteredData.map((card, index) => {
           const isSelected = selectedCards.includes(card.id);
@@ -91,6 +91,7 @@ const calculateUnselectedCardPosition = (index) => {
               onSelect={handleCardSelect}
               isSelected={isSelected}
               style={style}
+              className='p-[15rem] m-[15rem]'
               src={card.cardsReverse.clowReverse}
             />
           );
