@@ -1,24 +1,55 @@
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import useFetch from '../../../utils/useFetch';
 import Card from './Card';
 import { useRouter } from 'next/navigation';
 
+const urlApi = 'https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/';
+const excludedIds = ['53', '55'];
+
 export default function CardDown() {
-  const urlApi = 'https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/';
   const { data, loading } = useFetch(urlApi);
-  const excludedIds = ['53', '55'];
   const router = useRouter();
 
   const [selectedCards, setSelectedCards] = useState([]);
   const [subtitleCard, setSubtitleCard] = useState('para el pasado');
+  const [cardPositions, setCardPositions] = useState({});
 
-  if (loading) {
-    return <p className="text-[3.5rem] mx-28">Cargando...</p>;
-  }
+const calculateSelectedCardPosition = (index) => {
+  const verticalGap = 300;
+  const x = 300 + index * 200;
+  const y = verticalGap;
+  return { x, y };
+};
+
+const calculateUnselectedCardPosition = (index) => {
+  const centerX = window.innerWidth / 2.5;
+  const centerY = window.innerHeight / 3;
+  const radius = 540;
+
+  const x = centerX + radius * Math.cos((index / data.length) * Math.PI);
+  const y = centerY + .5 * radius * Math.sin((index / data.length + 1) * Math.PI);
+
+  return { x, y };
+};
+
 
   const handleCardSelect = (cardId) => {
     if (selectedCards.length < 3 && !selectedCards.includes(cardId)) {
-      setSelectedCards([...selectedCards, cardId]);
+      const newSelectedCards = [...selectedCards, cardId];
+      setSelectedCards(newSelectedCards);
+
+      const newCardPositions = newSelectedCards.reduce((positions, cardId, index) => {
+        const position = calculateSelectedCardPosition(index);
+        return {
+          ...positions,
+          [cardId]: position,
+        };
+      }, {});
+
+      setCardPositions((prevPositions) => ({
+        ...prevPositions,
+        ...newCardPositions,
+      }));
     }
 
     const subtitles = ['para el presente', 'para el futuro', 'Tu lectura'];
@@ -33,30 +64,22 @@ export default function CardDown() {
   const filteredData = data ? data.filter((card) => !excludedIds.includes(card.id)) : [];
 
   const calculateCardPosition = (isSelected, cardId, index) => {
-    const positions = [
-      { x: 260, y: 300 },
-      { x: 480, y: 300 },
-      { x: 700, y: 300 },
-    ];
-  
-    const selectedCardIndex = selectedCards.indexOf(cardId);
-    const position = selectedCardIndex !== -1 ? positions[selectedCardIndex] : { x: 0, y: 0 };
-  
-    const unselectedX = 520 + 560 * Math.cos((index / filteredData.length + 1) * Math.PI);
-    const unselectedY = 200 + 300 * Math.sin((index / filteredData.length + 1) * Math.PI);
-  
+    const position = isSelected ? cardPositions[cardId] : calculateUnselectedCardPosition(index);
+
     return isSelected
       ? `translate(50%, 50%) translate(${position.x}px, ${position.y}px)`
-      : `translate(50%, 50%) translate(${unselectedX}px, ${unselectedY}px)`;
+      : `translate(50%, 50%) translate(${position.x}px, ${position.y}px)`;
   };
-  
+
+  if (loading) {
+    return <p className="text-[3.5rem] mx-28">Cargando...</p>;
+  }
 
   return (
-    <div className="md:w-full md:h-full">
-      <section className="relative h-[800px] w-screen">
+    <div className="flex justify-center items-center  relative md:w-full h-full">
+      <section className="relative h-[400px] w-screen">
         <h3 className="text-center md:text-5xl text-4xl">{subtitleCard}</h3>
         {filteredData.map((card, index) => {
-
           const isSelected = selectedCards.includes(card.id);
           const style = { transform: calculateCardPosition(isSelected, card.id, index) };
 
@@ -71,9 +94,8 @@ export default function CardDown() {
               src={card.cardsReverse.clowReverse}
             />
           );
-
         })}
       </section>
     </div>
   );
-}
+};
