@@ -23,11 +23,11 @@ const calculateSelectedCardPosition = (index) => {
 
 const calculateUnselectedCardPosition = (index) => {
   const centerX = window.innerWidth / 2.5;
-  const centerY = window.innerHeight / 3;
-  const radius = 540;
+  const centerY = window.innerHeight / 2.5;
+  const radius = 640;
 
   const x = centerX + radius * Math.cos((index / data.length) * Math.PI);
-  const y = centerY + .5 * radius * Math.sin((index / data.length + 1) * Math.PI);
+  const y = centerY + .45 * radius * Math.sin((index / data.length + 1) * Math.PI);
 
   return { x, y };
 };
