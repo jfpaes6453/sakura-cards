@@ -11,15 +11,17 @@ export default function Card({ id, name, src, onSelect, isSelected, style }) {
             onClick={handleClick}
             style={{
                 ...style,
-                width: '170px',
-                height: '350px',
+                width: '135px',
+                height: '187px',
             }}
         >
             <Image
                 src={src}
                 fill
                 alt={name}
-                className="rounded-2xl max-w-none shadow-md cursor-pointer transition-transform duration-300 ease-in-out transform hover:translate-y-(-30%) hover:scale-110" />
+                className="rounded-2xl max-w-none shadow-md cursor-pointer transition-transform duration-300 
+                ease-in-out transform hover:translate-y-(-30%) hover:scale-110 contrast-75 saturate-75
+                brightness-100 grayscale-2"/>
         </div>
     );
 };
