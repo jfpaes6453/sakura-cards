@@ -67,7 +67,6 @@ const calculateUnselectedCardPosition = (index) => {
     const position = isSelected ? cardPositions[cardId] : calculateUnselectedCardPosition(index);
 
     const adjustedY = isSelected ? position.y + 150 : position.y
-    const adjustedx = isSelected ? position.y + 100 : position.y
 
     return isSelected
       ? `translate(50%, 50%) translate(${position.x}px, ${adjustedY}px)`
