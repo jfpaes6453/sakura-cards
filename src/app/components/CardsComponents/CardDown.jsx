@@ -84,7 +84,7 @@ const calculateUnselectedCardPosition = (index) => {
         <h3 className="text-center md:text-5xl text-4xl">{subtitleCard}</h3>
         {filteredData.map((card, index) => {
           const isSelected = selectedCards.includes(card.id);
-          const style = { transform: calculateCardPosition(isSelected, card.id, index) };
+          const style = { transform: calculateCardPosition(isSelected, card.id, index),  transition: 'transform 0.5s ease' };
 
           return (
             <Card
