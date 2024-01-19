@@ -13,25 +13,25 @@ export default function CardDown() {
   const [selectedCards, setSelectedCards] = useState([]);
   const [subtitleCard, setSubtitleCard] = useState('para el pasado');
   const [cardPositions, setCardPositions] = useState({});
+  const [areCardsVisible, setAreCardsVisible] = useState(true);
 
-const calculateSelectedCardPosition = (index) => {
-  const verticalGap = 300;
-  const x = 300 + index * 200;
-  const y = verticalGap;
-  return { x, y };
-};
+  const calculateSelectedCardPosition = (index) => {
+    const verticalGap = 300;
+    const x = 300 + index * 200;
+    const y = verticalGap;
+    return { x, y };
+  };
 
-const calculateUnselectedCardPosition = (index) => {
-  const centerX = window.innerWidth / 2.5;
-  const centerY = window.innerHeight / 2.5;
-  const radius = 640;
+  const calculateUnselectedCardPosition = (index) => {
+    const centerX = window.innerWidth / 2.5;
+    const centerY = window.innerHeight / 2.5;
+    const radius = 640;
 
-  const x = centerX + radius * Math.cos((index / data.length) * Math.PI);
-  const y = centerY + .45 * radius * Math.sin((index / data.length + 1) * Math.PI);
+    const x = centerX + radius * Math.cos((index / data.length) * Math.PI);
+    const y = centerY + 0.45 * radius * Math.sin((index / data.length + 1) * Math.PI);
 
-  return { x, y };
-};
-
+    return { x, y };
+  };
 
   const handleCardSelect = (cardId) => {
     if (selectedCards.length < 3 && !selectedCards.includes(cardId)) {
@@ -58,6 +58,7 @@ const calculateUnselectedCardPosition = (index) => {
     if (selectedCards.length === 3) {
       const queryParams = selectedCards.map((card, index) => `carta${index + 1}=${card}`).join('&');
       router.push(`/reading?${queryParams}`);
+      setAreCardsVisible(false);
     }
   };
 
@@ -65,14 +66,29 @@ const calculateUnselectedCardPosition = (index) => {
 
   const calculateCardPosition = (isSelected, cardId, index) => {
     const position = isSelected ? cardPositions[cardId] : calculateUnselectedCardPosition(index);
-
-    const adjustedY = isSelected ? position.y + 150 : position.y
-    const adjustedx = isSelected ? position.y + 100 : position.y
-
+  
+    const adjustedY = isSelected ? position.y + 150 : position.y;
+    const adjustedX = isSelected ? position.x + 100 : position.x;
+  
+    const translateY = isSelected && selectedCards.length === 3 ? '-270px' : '0';
+  
     return isSelected
-      ? `translate(50%, 50%) translate(${position.x}px, ${adjustedY}px)`
-      : `translate(50%, 50%) translate(${position.x}px, ${position.y}px)`;
-  };
+      ? `translate(50%, 50%) translate(${adjustedX}px, ${adjustedY}px) scale(1.2) translateY(${translateY})`
+      : areCardsVisible
+      ? `translate(50%, 50%) translate(${position.x}px, ${position.y}px)`
+      : 'translate(50%, 50%) translate(0, 0)';
+  };  
+
+  const calculateCardOpacity = (isSelected) => (areCardsVisible || isSelected ? 1 : 0);
+
+  useEffect(() => {
+    if (selectedCards.length === 3) {
+      const timeoutId = setTimeout(() => {
+        setAreCardsVisible(false);
+      }, 500);
+      return () => clearTimeout(timeoutId);
+    }
+  }, [selectedCards]);
 
   if (loading) {
     return <p className="text-[3.5rem] mx-28">Cargando...</p>;
@@ -84,7 +100,13 @@ const calculateUnselectedCardPosition = (index) => {
         <h3 className="text-center md:text-5xl text-4xl">{subtitleCard}</h3>
         {filteredData.map((card, index) => {
           const isSelected = selectedCards.includes(card.id);
-          const style = { transform: calculateCardPosition(isSelected, card.id, index),  transition: 'transform 0.5s ease' };
+          const style = {
+            transform: calculateCardPosition(isSelected, card.id, index),
+            opacity: calculateCardOpacity(isSelected),
+            transition: 'transform 0.5s ease, opacity 0.5s ease',
+            zIndex: isSelected ? 1 : 0,
+          };
+          
 
           return (
             <Card
@@ -102,4 +124,4 @@ const calculateUnselectedCardPosition = (index) => {
       </section>
     </div>
   );
-};
+}
