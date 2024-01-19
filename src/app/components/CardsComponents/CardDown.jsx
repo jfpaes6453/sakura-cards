@@ -1,88 +1,104 @@
-'use client'
-
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import useFetch from '../../../utils/useFetch';
 import Card from './Card';
-import './index.css';
-import { useRouter } from 'next/navigation'
+import { useRouter } from 'next/navigation';
 
-function CardDown() {
-    const urlApi = 'https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/';
-    const { data, loading } = useFetch(urlApi);
-    const excludedIds = ['53', '55']
-   
-    const router = useRouter()
+const urlApi = 'https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/';
+const excludedIds = ['53', '55'];
 
-    const [selectedCards, setSelectedCards] = useState([])
-    
-    if (loading) {
-        return <p className="text-[3.5rem] mx-28">Cargando...</p>;
+export default function CardDown() {
+  const { data, loading } = useFetch(urlApi);
+  const router = useRouter();
+
+  const [selectedCards, setSelectedCards] = useState([]);
+  const [subtitleCard, setSubtitleCard] = useState('para el pasado');
+  const [cardPositions, setCardPositions] = useState({});
+
+const calculateSelectedCardPosition = (index) => {
+  const verticalGap = 300;
+  const x = 300 + index * 200;
+  const y = verticalGap;
+  return { x, y };
+};
+
+const calculateUnselectedCardPosition = (index) => {
+  const centerX = window.innerWidth / 2.5;
+  const centerY = window.innerHeight / 2.5;
+  const radius = 640;
+
+  const x = centerX + radius * Math.cos((index / data.length) * Math.PI);
+  const y = centerY + .45 * radius * Math.sin((index / data.length + 1) * Math.PI);
+
+  return { x, y };
+};
+
+
+  const handleCardSelect = (cardId) => {
+    if (selectedCards.length < 3 && !selectedCards.includes(cardId)) {
+      const newSelectedCards = [...selectedCards, cardId];
+      setSelectedCards(newSelectedCards);
+
+      const newCardPositions = newSelectedCards.reduce((positions, cardId, index) => {
+        const position = calculateSelectedCardPosition(index);
+        return {
+          ...positions,
+          [cardId]: position,
+        };
+      }, {});
+
+      setCardPositions((prevPositions) => ({
+        ...prevPositions,
+        ...newCardPositions,
+      }));
     }
 
-    const handleCardSelect = (cardId) => {
-        if (selectedCards.length < 3 && !selectedCards.includes(cardId)) {
-            setSelectedCards([...selectedCards, cardId]);
-        }
-        if (selectedCards.length === 3) {
-            
-            router.push(`/reading?carta1=${selectedCards[0]}&carta2=${selectedCards[1]}&carta3=${selectedCards[2]}`);
-        }
+    const subtitles = ['para el presente', 'para el futuro', 'Tu lectura'];
+    setSubtitleCard(subtitles[selectedCards.length] || subtitleCard);
+
+    if (selectedCards.length === 3) {
+      const queryParams = selectedCards.map((card, index) => `carta${index + 1}=${card}`).join('&');
+      router.push(`/reading?${queryParams}`);
     }
+  };
 
-    const filteredData = data ? data.filter(card => !excludedIds.includes(card.id)) : [];
+  const filteredData = data ? data.filter((card) => !excludedIds.includes(card.id)) : [];
 
-    return (
-        <div className="card-fan">
-            {filteredData.map((card, index) => {
-                const isSelected = selectedCards.includes(card.id);
-                let style = {}
+  const calculateCardPosition = (isSelected, cardId, index) => {
+    const position = isSelected ? cardPositions[cardId] : calculateUnselectedCardPosition(index);
 
-                if (isSelected) {
-                    switch (selectedCards.indexOf(card.id)) {
-                        case 0:
-                            style = {
-                                transform: 'translate(50%, 50%) translate(280px, 650px)',
-                            };
-                            break;
-                        case 1:
-                            style = {
-                                transform: 'translate(50%, 50%) translate(510px, 650px)',
-                            };
-                            break;
-                        case 2:
-                            style = {
-                                transform: 'translate(50%, 50%) translate(740px, 650px)',
-                            };
-                            break;
-                        default:
-                            break;
-                    }
-                } else {
-                    const angle = (index / filteredData.length + 1) * Math.PI;
-                    const radius = 550;
-                    const centerX = 480;
-                    const centerY = 400;
-                    const x = centerX + radius * Math.cos(angle);
-                    const y = centerY + radius * Math.sin(angle);
-                    style = {
-                        transform: `translate(50%, 50%) translate(${x}px, ${y}px)`,
-                    };
-                }
+    const adjustedY = isSelected ? position.y + 150 : position.y
 
-                return (
-                    <Card
-                        key={card.id}
-                        id={card.id}
-                        name={card.spanishName}
-                        onSelect={handleCardSelect}
-                        isSelected={isSelected}
-                        style={style}
-                        src={card.cardsReverse.clowReverse}
-                    />
-                );
-            })}
-        </div>
-    );
-}
+    return isSelected
+      ? `translate(50%, 50%) translate(${position.x}px, ${adjustedY}px)`
+      : `translate(50%, 50%) translate(${position.x}px, ${position.y}px)`;
+  };
 
-export default CardDown
+  if (loading) {
+    return <p className="text-[3.5rem] mx-28">Cargando...</p>;
+  }
+
+  return (
+    <div className="flex justify-center items-center  relative md:w-full h-full">
+      <section className="relative h-[1100px] w-screen">
+        <h3 className="text-center md:text-5xl text-4xl">{subtitleCard}</h3>
+        {filteredData.map((card, index) => {
+          const isSelected = selectedCards.includes(card.id);
+          const style = { transform: calculateCardPosition(isSelected, card.id, index) };
+
+          return (
+            <Card
+              key={card.id}
+              id={card.id}
+              name={card.spanishName}
+              onSelect={handleCardSelect}
+              isSelected={isSelected}
+              style={style}
+              className='p-[15rem] m-[15rem]'
+              src={card.cardsReverse.clowReverse}
+            />
+          );
+        })}
+      </section>
+    </div>
+  );
+};

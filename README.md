@@ -20,7 +20,7 @@ React: The user interface has been built with React, a JavaScript library that f
 
 Next.js: We have used Next.js to optimize page performance through server-side rendering and static generation. This ensures fast loading and an enhanced user experience.
 
-Vite: The rapid and efficient building of the application has been achieved with Vite, a tool that facilitates the development of modern web applications.
+Jest: The rapid and efficient building of the application has been achieved with Jest, a tool that facilitates the development of modern web applications.
 
 Cypress: To ensure code quality and reliability, we have implemented tests with Cypress, a powerful end-to-end testing tool.
 
@@ -58,7 +58,7 @@ Este proyecto se ha desarrollado utilizando las siguientes tecnologías:
 
 *Next.js: Hemos utilizado Next.js para optimizar el rendimiento de la página mediante el rendimiento del lado del servidor y la generación estática. Esto garantiza una carga rápida y una experiencia de usuario mejorada.
 
-*Vites: La construcción rápida y eficiente de la aplicación se ha logrado con Vites, una herramienta que facilita el desarrollo de aplicaciones web modernas.
+*Jest: La construcción rápida y eficiente de la aplicación se ha logrado con Jest, una herramienta que facilita el desarrollo de aplicaciones web modernas.
 
 *Cypress: Para asegurar la calidad y fiabilidad del código, hemos implementado pruebas con Cypress, una potente herramienta de pruebas end-to-end.
 

@@ -10,7 +10,7 @@ const ButtonsRendered = () => {
         router.push('/choose-card')
     }
     return (
-    <div className="flex flex-col ml-8">
+    <div className="flex flex-col md:ml-8">
         
         <button onClick={handleReset} className="flex flex-row items-center text-3xl
         border-solid gap-x-4 border-2 justify-center w-52 border-font-color rounded-3xl py-2 px-7 m-3 hover:shadow-[0_15px_30px_-7px_rgba(0,0,0,0.5)]">
