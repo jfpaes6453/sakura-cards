@@ -28,7 +28,7 @@ const socialNetworks = [
 export default function SocialNetworks() {
     
     return(
-        <div className='flex flex-row'>
+        <div  data-testid="social-networks" className='flex flex-row'>
             {
                 socialNetworks.map((network) => (
                 <a key={network.name} href={network.url} target="_blank" className="p-3">
