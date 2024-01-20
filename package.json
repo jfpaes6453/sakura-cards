@@ -7,9 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest"
+    "test": "jest",
+    "json-server": "json-server --watch src/data/data.json --port 3001"
   },
   "dependencies": {
+    "axios": "^1.6.5",
+    "json-server": "^1.0.0-alpha.21",
     "next": "14.0.4",
     "prop-types": "^15.8.1",
     "react": "^18",

@@ -1,0 +1,46 @@
+{
+    "users": [
+    {
+        "id": 1,
+        "username": "El sexto sentido",
+        "date": "M. Night Shyamalan",
+        "results": "Drama"
+    },
+    {
+        "id": 2,
+        "username": "Pulp Fiction",
+        "date": "Tarantino",
+        "results": "Acción"
+    },
+    {
+        "id": 3,
+        "username": "Todo Sobre Mi Madre",
+        "date": "Almodobar",
+        "results": "Drama"
+    },
+    {
+        "id": 4,
+        "username": "300",
+        "date": "Zack Snyder",
+        "results": "Acción"
+    },
+    {
+        "id": 5,
+        "username": "El silencio de los corderos",
+        "date": "Jonathan Demme",
+        "results": "Drama"
+    },
+    {
+        "id": 6,
+        "username": "Forrest Gump",
+        "date": "Robert Zemeckis",
+        "results": "Comedia"
+    },
+    {
+        "id": 7,
+        "username": "Las Hurdes",
+        "date": "Luis Buñuel",
+        "results": "Documental"
+    }
+]
+}
