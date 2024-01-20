@@ -32,15 +32,34 @@ export const getAll = () => {
 //   return request.then(response => response.data)
 // }
 
-export const update = (id, newObject) => {
+export const createUser = async(user) => {
     try {
-        const request = axios.put(`${baseUrl}/${id}`, newObject)
-        return request.then(response => response.data)
+        const res = await axios.post(`${baseUrl}`, user, {
+            headers:{
+                'Content-type':'application/json'
+            }
+        })
+        return res.data
+
     } catch (error) {
-        console.error('Error: ', error)
+        console.error('error: ', error)
     }
 
 }
+
+
+export const updateCards = async (userId, cards) => {
+    try {
+        const response = await axios.put(`${baseUrl}/${userId}`, {
+            selectedCards: cards,
+        });
+        return response.data;
+        
+    } catch (error) {
+        console.error('Error updating user with selected cards:', error);
+        throw error;
+    }
+};
 
 // export default { 
 //   getAll: getAll, 
