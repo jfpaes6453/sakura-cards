@@ -1,29 +1,43 @@
 'use client'
 import React, { useState } from 'react';
+import { useRouter } from "next/navigation";
 import { updateUsername, deleteUser } from '@/utils/apiAxios';
+import { FaRegSave } from "react-icons/fa";
+import { MdOutlineCancel } from "react-icons/md";
+import { FiEdit } from "react-icons/fi";
+import { RiDeleteBinLine } from "react-icons/ri";
 
-export default function Table({ user, onUserUpdate, onUserDelete }) {
+
+export default function Table({ user }) {
+  const router = useRouter()
+
   const [newUsername, setNewUsername] = useState('');
   const [isModifying, setIsModifying] = useState(false);
 
-  const handleUpdateUsername = () => 
-  setIsModifying(true);
+  const handleUpdateUsername = () =>
+    setIsModifying(true);
 
-  const handleDelete = () => 
-  window.confirm('Eliminar?') && deleteUser(user.id).then(onUserDelete);
+  const handleDelete = () => {
+    window.confirm('Eliminar?') && deleteUser(user.id)
+    router.refresh()
+  }
 
-  const handleSaveUsername = () => {
+  const handleSaveUsername = async () => {
     if (newUsername.trim() !== '') {
-        updateUsername(user.id, newUsername)
-        .then(() => onUserUpdate())
-        .finally(() => setIsModifying(false))
-        .catch((error) => console.error('Error updating username:', error));
+      try {
+        await updateUsername(user.id, newUsername);
+      } catch (error) {
+        console.error('Error updating username:', error);
+      } finally {
+        setIsModifying(false);
+      }
+      router.refresh()
     }
   };
-  
-  
-  const handleCancelEdit = () => 
-  setIsModifying(false) || setNewUsername('');
+
+
+  const handleCancelEdit = () =>
+    setIsModifying(false) || setNewUsername('');
 
   return (
     <tr key={user.id}>
@@ -42,17 +56,17 @@ export default function Table({ user, onUserUpdate, onUserDelete }) {
       <td>{user.date}</td>
       <td>{user.results}</td>
       <td>
-        <span> {/*creo que debe ir otra cosa*/}
+        <section>
           {isModifying ? (
             <>
-              <button onClick={handleSaveUsername}>guardar</button>
-              <button onClick={handleCancelEdit}>cancelar</button>
+              <button onClick={handleSaveUsername}><FaRegSave /></button>
+              <button onClick={handleCancelEdit}><MdOutlineCancel /></button>
             </>
           ) : (
-            <button onClick={handleUpdateUsername}>editar</button>
+            <button onClick={handleUpdateUsername}><FiEdit /></button>
           )}
-          {!isModifying && <button onClick={handleDelete}>eliminar</button>}
-        </span>
+          {!isModifying && <button onClick={handleDelete}><RiDeleteBinLine /></button>}
+        </section>
       </td>
     </tr>
   );
