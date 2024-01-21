@@ -1,22 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import useFetch from '../../../utils/useFetch';
 import Card from './Card';
 import { useRouter } from 'next/navigation';
-import { useSearchParams } from 'next/navigation';
 
-const urlApi = 'https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/';
-const excludedIds = ['53', '55'];
 
 export default function CardDown() {
+  const urlApi = 'https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/';
+  const excludedIds = ['53', '55'];
+
   const { data, loading } = useFetch(urlApi);
   const router = useRouter();
 
   const [selectedCards, setSelectedCards] = useState([]);
   const [subtitleCard, setSubtitleCard] = useState('para el pasado');
   const [cardPositions, setCardPositions] = useState({});
-  const [searchParams, setSearchParams] = useSearchParams()
+//  const [searchParams, setSearchParams] = useSearchParams()
 
-  const userId = router.query?.userId || searchParams.userId;
+//  const userId = router.query?.userId || searchParams.userId;
 
   const calculateSelectedCardPosition = (index) => {
     const verticalGap = 300;
@@ -59,18 +59,24 @@ export default function CardDown() {
     const subtitles = ['para el presente', 'para el futuro', 'Tu lectura'];
     setSubtitleCard(subtitles[selectedCards.length] || subtitleCard);
 
-    if (selectedCards.length === 3) {
-      console.log('userId:', userId)
-      //userId: undefined
 
+    if (selectedCards.length === 3) {
       const queryParams = selectedCards.map((card, index) => `carta${index + 1}=${card}`).join('&');
-      router.push(`/reading?userId=${userId}&${queryParams}`);
-      // setSearchParams({ userId, ...searchParams });
-      // const queryParams = selectedCards.map((card, index) => `carta${index + 1}=${card}`).join('&');
-      // router.push(`/reading?${queryParams}`);
-      
+      router.push(`/reading?${queryParams}`);
     }
   };
+// if (selectedCards.length === 3) {
+//      console.log('userId:', userId)
+//       userId: undefined
+
+//      const queryParams = selectedCards.map((card, index) => `carta${index + 1}=${card}`).join('&');
+//      router.push(`/reading?userId=${userId}&${queryParams}`);
+//       setSearchParams({ userId, ...searchParams });
+//       const queryParams = selectedCards.map((card, index) => `carta${index + 1}=${card}`).join('&');
+//       router.push(`/reading?${queryParams}`);
+
+//    }
+//  };
 
   const filteredData = data ? data.filter((card) => !excludedIds.includes(card.id)) : [];
 

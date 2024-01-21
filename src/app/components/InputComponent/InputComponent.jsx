@@ -32,15 +32,18 @@ const InputComponent = () =>{
   const router = useRouter();
   const [newUser, setNewUser] = useState("")
 
+  const formattedDate = new Date().toISOString()
+
+
   const userId = uuidv4()
   const handleNewUser = async(e) =>{
     e.preventDefault()
-    await createUser({
+      await createUser({
       id: userId,
-      date: new Date(),
+      date: formattedDate,
       username: newUser,
       results: ''
-    })
+    });
 
     setNewUser('')
     router.push('/choose-card?userId=${userId}')

@@ -2,7 +2,7 @@ import axios from "axios";
 
 const baseUrl = "http://localhost:3001/users"
 
-export const getAll = () => {
+export const getAllData = () => {
     try {
         const request = axios.get(baseUrl)
         return request.then(response => response.data)
@@ -26,6 +26,23 @@ export const createUser = async (user) => {
     }
 
 }
+
+export const getLatestUserId = async () => {
+    try {
+      const response = await axios.get(`${baseUrl}?_sort=date&_order=desc&_limit=1`);
+      if (response.data.length > 0) {
+        const latestUser = response.data[0];
+        return latestUser.id;
+      } else {
+        // No hay usuarios, puedes manejar este caso según tus necesidades
+        console.error('No se encontraron usuarios.');
+        return null;
+      }
+    } catch (error) {
+      console.error('Error al obtener el último ID de usuario:', error);
+      throw error;  // Puedes manejar el error según tus necesidades
+    }
+  };
 
 export const updateCards = async (userId, cards) => {
     try {
