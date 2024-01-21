@@ -61,8 +61,9 @@ export const updateCards = async (userId, cards) => {
     }
 };
 
-// export default { 
-//   getAll: getAll, 
-// //   create: create, 
-// //   update: update 
-// }
+
+
+export const deleteUser = async (userId) => {
+       await axios.delete(`${baseUrl}/${userId}`, {
+        });
+    }
