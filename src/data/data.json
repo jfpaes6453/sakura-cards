@@ -1,52 +1,6 @@
 {
   "users": [
     {
-      "id": "1",
-      "username": "El sexto sentido",
-      "date": "M. Night Shyamalan",
-      "results": "Drama"
-    },
-    {
-      "id": "2",
-      "username": "Pulp Fiction",
-      "date": "Tarantino",
-      "results": "Acción"
-    },
-    {
-      "id": "3",
-      "username": "Todo Sobre Mi Madre",
-      "date": "Almodobar",
-      "results": "Drama"
-    },
-    {
-      "id": "4",
-      "username": "300",
-      "date": "Zack Snyder",
-      "results": "Acción"
-    },
-    {
-      "id": "5",
-      "username": "El silencio de los corderos",
-      "date": "Jonathan Demme",
-      "results": "Drama"
-    },
-    {
-      "id": "6",
-      "username": "Forrest Gump",
-      "date": "Robert Zemeckis",
-      "results": "Comedia"
-    },
-    {
-      "id": "7",
-      "username": "Las Hurdes",
-      "date": "Luis Buñuel",
-      "results": "Documental"
-    },
-    {
-      "id": "6d806aab-c315-40ca-8e9a-11e22a0bca97",
-      "date": "2024-01-20T14:24:30.261Z"
-    },
-    {
       "id": "d441a2d2-77c9-4506-b824-bea9a0ab6492",
       "date": "2024-01-20T14:25:50.662Z",
       "username": "Casolita"
@@ -95,12 +49,6 @@
       "id": "327819e5-ab3a-45a0-bad4-b15c793c2965",
       "date": "2024-01-20T16:35:13.425Z",
       "username": "melita",
-      "results": ""
-    },
-    {
-      "id": "7a7fa778-f25e-441c-b702-34af02bb322e",
-      "date": "2024-01-20T16:59:08.019Z",
-      "username": "nosaleee",
       "results": ""
     },
     {

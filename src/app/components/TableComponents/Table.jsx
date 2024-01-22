@@ -40,9 +40,9 @@ export default function Table({ user }) {
     setIsModifying(false) || setNewUsername('');
 
   return (
-    <tr key={user.id}>
+    <tr key={user.id} className="border border-zinc-400">
       {isModifying ? (
-        <td>
+        <td className="border border-zinc-400 p-3">
           <input
             type="text"
             placeholder="Modificar nombre"
@@ -51,12 +51,12 @@ export default function Table({ user }) {
           />
         </td>
       ) : (
-        <td>{user.username}</td>
+        <td className="flex justify-center items-center  border-zinc-400 p-3">{user.username}</td>
       )}
-      <td>{user.date}</td>
-      <td>{user.results}</td>
+      <td className="text-center border border-zinc-400 p-3">{user.date}</td>
+      <td className="border border-zinc-400 p-3">{user.results}</td>
       <td>
-        <section>
+        <section className="flex justify-center gap-3 items-center">
           {isModifying ? (
             <>
               <button onClick={handleSaveUsername}><FaRegSave /></button>
