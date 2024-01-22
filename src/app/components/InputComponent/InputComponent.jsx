@@ -48,6 +48,9 @@ const InputComponent = () =>{
     setNewUser('')
     //guardo mi ID en localStorage, pa usarlo en cardResults
     localStorage.setItem('userId', userId)
+    //y reinicio el localStorage, con las cartas que quedaron de antes
+    //c/v qe el user cargue su nombre el local de cartas estara vacio
+    localStorage.removeItem('selectedRandomCards')
     router.push('/choose-card')
   }
 

@@ -14,9 +14,6 @@ export default function CardDown() {
   const [selectedCards, setSelectedCards] = useState([]);
   const [subtitleCard, setSubtitleCard] = useState('para el pasado');
   const [cardPositions, setCardPositions] = useState({});
-//  const [searchParams, setSearchParams] = useSearchParams()
-
-//  const userId = router.query?.userId || searchParams.userId;
 
   const calculateSelectedCardPosition = (index) => {
     const verticalGap = 300;
@@ -64,19 +61,7 @@ export default function CardDown() {
       const queryParams = selectedCards.map((card, index) => `carta${index + 1}=${card}`).join('&');
       router.push(`/reading?${queryParams}`);
     }
-  };
-// if (selectedCards.length === 3) {
-//      console.log('userId:', userId)
-//       userId: undefined
-
-//      const queryParams = selectedCards.map((card, index) => `carta${index + 1}=${card}`).join('&');
-//      router.push(`/reading?userId=${userId}&${queryParams}`);
-//       setSearchParams({ userId, ...searchParams });
-//       const queryParams = selectedCards.map((card, index) => `carta${index + 1}=${card}`).join('&');
-//       router.push(`/reading?${queryParams}`);
-
-//    }
-//  };
+  }
 
   const filteredData = data ? data.filter((card) => !excludedIds.includes(card.id)) : [];
 

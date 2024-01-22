@@ -41,7 +41,7 @@ export default function CardResult() {
             // Si no hay un ID, guardamos igual en localStorage la seleccion de cartas 
             const storedCards = JSON.parse(localStorage.getItem('selectedRandomCards'));
             const cards = storedCards || getRandomCards(3, data);
-            setRandomCards(cards);
+            setRandomCards(cards)
             localStorage.setItem('selectedRandomCards', JSON.stringify(cards));
         }
 
