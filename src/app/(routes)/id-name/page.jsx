@@ -1,5 +1,5 @@
 import React from 'react';
-import InputComponent from '../../Components/InputComponent/InputComponent';
+import InputComponent from '@/app/components/InputComponent/InputComponent';
 
 
 export default function idName() {

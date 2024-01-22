@@ -1,7 +1,7 @@
 'use client'
 
-import ButtonsRendered from "../../components/ButtonComponent/ButtonsRendered";
-import CardDown from "../../components/CardsComponents/CardDown";
+import ButtonsRendered from "@/app/components/ButtonComponent/ButtonsRendered";
+import CardDown from "@/app/components/CardsComponents/CardDown";
 
 export default function chooseCard() {
 
