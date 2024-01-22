@@ -1,131 +1,187 @@
 {
   "users": [
     {
-      "id": "1",
-      "username": "El sexto sentido",
-      "date": "M. Night Shyamalan",
-      "results": "Drama"
+      "id": "829d08a1-13a2-4032-8bfc-b0456ebf0ec5",
+      "date": "22/1/2024",
+      "username": "prueba 1003",
+      "results": [
+        {
+          "id": "16",
+          "cardNumber": 16,
+          "spanishName": "Niebla",
+          "englishName": "The Mist",
+          "kanji": "霧",
+          "Rōmaji": "Kiri",
+          "appeardManga": "",
+          "appeardAnime": "14",
+          "clowCard": "https://i.ibb.co/VxtF7LL/Niebla.jpg",
+          "sakuraCard": "https://i.ibb.co/QKSnXnG/Niebla-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Representa la confusión, lo difuso.",
+          "__v": 0
+        },
+        {
+          "id": "1",
+          "cardNumber": 1,
+          "spanishName": "Viento",
+          "englishName": "The Windy",
+          "kanji": "風",
+          "Rōmaji": "Kaze",
+          "appeardManga": "1",
+          "appeardAnime": "1",
+          "clowCard": "https://i.ibb.co/ftvH3CX/Viento.jpg",
+          "sakuraCard": "https://i.ibb.co/k5HVTP7/Viento-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza el intelecto, la sabiduría, la meteorología muestra información valiosa.",
+          "__v": 0
+        },
+        {
+          "id": "45",
+          "cardNumber": 45,
+          "spanishName": "Candado",
+          "englishName": "The Lock",
+          "kanji": "錠",
+          "Rōmaji": "Joe",
+          "appeardManga": "",
+          "appeardAnime": "38",
+          "clowCard": "https://i.ibb.co/1rMcDq9/Candado.jpg",
+          "sakuraCard": "https://i.ibb.co/tc0kMqW/Candado-Sakura.jpg",
+          "meaning": " Simboliza la soledad, la ignorancia, el misterio.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          }
+        }
+      ]
     },
     {
-      "id": "2",
-      "username": "Pulp Fiction",
-      "date": "Tarantino",
-      "results": "Acción"
+      "id": "f9574461-832b-4339-af5c-496f9e2ca1d5",
+      "date": "22/1/2024",
+      "username": "prubea funcionando",
+      "results": [
+        {
+          "id": "16",
+          "cardNumber": 16,
+          "spanishName": "Niebla",
+          "englishName": "The Mist",
+          "kanji": "霧",
+          "Rōmaji": "Kiri",
+          "appeardManga": "",
+          "appeardAnime": "14",
+          "clowCard": "https://i.ibb.co/VxtF7LL/Niebla.jpg",
+          "sakuraCard": "https://i.ibb.co/QKSnXnG/Niebla-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Representa la confusión, lo difuso.",
+          "__v": 0
+        },
+        {
+          "id": "1",
+          "cardNumber": 1,
+          "spanishName": "Viento",
+          "englishName": "The Windy",
+          "kanji": "風",
+          "Rōmaji": "Kaze",
+          "appeardManga": "1",
+          "appeardAnime": "1",
+          "clowCard": "https://i.ibb.co/ftvH3CX/Viento.jpg",
+          "sakuraCard": "https://i.ibb.co/k5HVTP7/Viento-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza el intelecto, la sabiduría, la meteorología muestra información valiosa.",
+          "__v": 0
+        },
+        {
+          "id": "45",
+          "cardNumber": 45,
+          "spanishName": "Candado",
+          "englishName": "The Lock",
+          "kanji": "錠",
+          "Rōmaji": "Joe",
+          "appeardManga": "",
+          "appeardAnime": "38",
+          "clowCard": "https://i.ibb.co/1rMcDq9/Candado.jpg",
+          "sakuraCard": "https://i.ibb.co/tc0kMqW/Candado-Sakura.jpg",
+          "meaning": " Simboliza la soledad, la ignorancia, el misterio.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          }
+        }
+      ]
     },
     {
-      "id": "3",
-      "username": "Todo Sobre Mi Madre",
-      "date": "Almodobar",
-      "results": "Drama"
-    },
-    {
-      "id": "4",
-      "username": "300",
-      "date": "Zack Snyder",
-      "results": "Acción"
-    },
-    {
-      "id": "5",
-      "username": "El silencio de los corderos",
-      "date": "Jonathan Demme",
-      "results": "Drama"
-    },
-    {
-      "id": "6",
-      "username": "Forrest Gump",
-      "date": "Robert Zemeckis",
-      "results": "Comedia"
-    },
-    {
-      "id": "7",
-      "username": "Las Hurdes",
-      "date": "Luis Buñuel",
-      "results": "Documental"
-    },
-    {
-      "id": "6d806aab-c315-40ca-8e9a-11e22a0bca97",
-      "date": "2024-01-20T14:24:30.261Z"
-    },
-    {
-      "id": "d441a2d2-77c9-4506-b824-bea9a0ab6492",
-      "date": "2024-01-20T14:25:50.662Z",
-      "username": "Casolita"
-    },
-    {
-      "id": "49f62d07-ad97-46ae-b595-e0aeeb67a9ce",
-      "date": "2024-01-20T14:30:38.236Z",
-      "username": "asdfghj"
-    },
-    {
-      "id": "d1bfa272-b110-4dcd-b5f3-ed94429821a5",
-      "date": "2024-01-20T14:50:15.562Z",
-      "username": "antonia"
-    },
-    {
-      "id": "822b25b9-7e31-4246-81b4-7a0832d9e312",
-      "date": "2024-01-20T14:55:54.601Z",
-      "username": "Melissa",
-      "results": ""
-    },
-    {
-      "id": "52fb3370-f250-4b5d-8391-0fc06dd0f9fa",
-      "date": "2024-01-20T16:01:58.331Z",
-      "username": "antn",
-      "results": ""
-    },
-    {
-      "id": "02b47a2c-e90e-4a7c-b682-5816774507a4",
-      "date": "2024-01-20T16:07:18.329Z",
-      "username": "mel",
-      "results": ""
-    },
-    {
-      "id": "adb4b203-d565-436b-9f55-5f9001b199a8",
-      "date": "2024-01-20T16:13:23.348Z",
-      "username": "prueba1",
-      "results": ""
-    },
-    {
-      "id": "6b75fc38-7024-4318-b149-0b57e43742e5",
-      "date": "2024-01-20T16:20:44.124Z",
-      "username": "hola",
-      "results": ""
-    },
-    {
-      "id": "327819e5-ab3a-45a0-bad4-b15c793c2965",
-      "date": "2024-01-20T16:35:13.425Z",
-      "username": "melita",
-      "results": ""
-    },
-    {
-      "id": "7a7fa778-f25e-441c-b702-34af02bb322e",
-      "date": "2024-01-20T16:59:08.019Z",
-      "username": "nosaleee",
-      "results": ""
-    },
-    {
-      "id": "cd60cd67-32bb-48b4-882d-0e000dcbf282",
-      "date": "2024-01-20T17:02:26.133Z",
-      "username": "Melissa",
-      "results": ""
-    },
-    {
-      "id": "4d271e16-0f74-46d5-a1f2-7c330e65b892",
-      "date": "2024-01-20T17:04:02.305Z",
-      "username": "prueba3",
-      "results": ""
-    },
-    {
-      "id": "ac6835b1-fbdf-44cd-9d69-ccfeedcbc84b",
-      "date": "2024-01-21T23:11:44.392Z",
-      "username": "tengo sueñito",
-      "results": ""
-    },
-    {
-      "id": "1242d192-185f-45e6-a803-e7818e94b99a",
-      "date": "2024-01-21T23:13:31.152Z",
-      "username": "quiero cafe",
-      "results": ""
+      "id": "01efd880-6261-4222-8715-6914ee053d39",
+      "date": "22/1/2024",
+      "username": "prueba 1005",
+      "results": [
+        {
+          "id": "46",
+          "cardNumber": 46,
+          "spanishName": "Nube",
+          "englishName": "The Cloud",
+          "kanji": "雲",
+          "Rōmaji": "Kumo",
+          "appeardManga": "",
+          "appeardAnime": "39",
+          "clowCard": "https://i.ibb.co/YydjPX0/Nube.jpg",
+          "sakuraCard": "https://i.ibb.co/wh7w3kG/Nube-Sakura.jpg",
+          "meaning": "Esta carta simboliza incertidumbre.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          }
+        },
+        {
+          "id": "33",
+          "cardNumber": 33,
+          "spanishName": "Grande",
+          "englishName": "The Big",
+          "kanji": "大",
+          "Rōmaji": "Dai",
+          "appeardManga": "",
+          "appeardAnime": "31",
+          "clowCard": "https://i.ibb.co/gz8Qmfb/Grande.jpg",
+          "sakuraCard": "https://i.ibb.co/J2NYWjS/Grande-Sakura.jpg",
+          "meaning": "Esta carta simboliza el crecimiento, el avance, el éxito.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          }
+        },
+        {
+          "id": "28",
+          "cardNumber": 28,
+          "spanishName": "Laberinto",
+          "englishName": "The Maze",
+          "kanji": "迷",
+          "Rōmaji": "Mei",
+          "appeardManga": "15",
+          "appeardAnime": "26",
+          "clowCard": "https://i.ibb.co/3kgK8Lt/Laberinto.jpg",
+          "sakuraCard": "https://i.ibb.co/G2K8q2y/Laberinto-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": " Simboliza la desorientación, una prisión.",
+          "__v": 0
+        }
+      ]
     }
   ]
 }

@@ -1,6 +1,8 @@
 import axios from "axios";
 
 const baseUrl = "http://localhost:3001/users"
+axios.defaults.headers.post['Content-Type'] = 'application/json'
+axios.defaults.headers.post['Accept'] = 'application/json'
 
 export const getAllData = () => {
     try {
@@ -9,16 +11,12 @@ export const getAllData = () => {
     } catch (error) {
         console.error('error: ', error)
     }
-
 }
+
 
 export const createUser = async (user) => {
     try {
-        const res = await axios.post(`${baseUrl}`, user, {
-            headers: {
-                'Content-type': 'application/json'
-            }
-        })
+        const res = await axios.post(`${baseUrl}`, user)
         return res.data
 
     } catch (error) {
@@ -27,28 +25,34 @@ export const createUser = async (user) => {
 
 }
 
-export const getLatestUserId = async () => {
+
+export const updateUsername = async (userId, newUsername) => {
     try {
-      const response = await axios.get(`${baseUrl}?_sort=date&_order=desc&_limit=1`);
-      if (response.data.length > 0) {
-        const latestUser = response.data[0];
-        return latestUser.id;
-      } else {
-        // No hay usuarios, puedes manejar este caso según tus necesidades
-        console.error('No se encontraron usuarios.');
-        return null;
-      }
+        const response = await axios.patch(`${baseUrl}/${userId}`, { username: newUsername });
+        return response.data;
+        
     } catch (error) {
-      console.error('Error al obtener el último ID de usuario:', error);
-      throw error;  // Puedes manejar el error según tus necesidades
+        console.error('Error al actualizar nombre de usuario:', error)
     }
-  };
+};
+
+export const deleteUser = async (userId) => {
+    try {
+        const response = await axios.delete(`${baseUrl}/${userId}`)
+        return response.data
+    } catch (error) {
+        console.error('Error al eliminar usuario:', error)
+    }
+}
+
+
 
 export const updateCards = async (userId, cards) => {
     try {
-        const response = await axios.put(`${baseUrl}/${userId}`, {
+        const response = await axios.patch(`${baseUrl}/${userId}`, {
             selectedCards: cards,
-        });
+        })
+
         return response.data;
 
     } catch (error) {
@@ -57,9 +61,13 @@ export const updateCards = async (userId, cards) => {
     }
 };
 
-export const updateUsername = async (userId, newUsername) => {
-    const response = await axios.patch(`${baseUrl}/${userId}`, { username: newUsername }, { headers: { 'content-type': 'application/json' } });
-    return response.data;
-};
 
-export const deleteUser = (userId) => axios.delete(`${baseUrl}/${userId}`);
+export const updateUserResults = async (userId, newResults) => {
+    try {
+        const response = await axios.patch(`${baseUrl}/${userId}`, { results: newResults });
+        return response.data;
+    } catch (error) {
+        console.error('Error al actualizar resultados:', error);
+        throw error;
+    }
+}

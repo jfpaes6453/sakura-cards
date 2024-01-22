@@ -5,6 +5,7 @@ import { getRandomCards } from "@/utils/cardUtils"
 import useFetch from "@/utils/useFetch";
 import Card from "./Card"
 import { Noto_Serif_JP } from "next/font/google";
+import { updateUserResults } from "@/utils/apiAxios";
 
 
 const inder = Noto_Serif_JP({ weight: ['200'],
@@ -12,10 +13,10 @@ subsets: ['latin']})
 
 
 export default function CardResult() {
+
     const [randomCards, setRandomCards] = useState([])
 
     const urlApi = 'https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/'
-
     const { data, loading, error } = useFetch(urlApi)
 
     useEffect(() => {
@@ -23,12 +24,26 @@ export default function CardResult() {
         return
         }
 
-        const storedCards = JSON.parse(localStorage.getItem('selectedRandomCards'))
+        const storedUserId = localStorage.getItem('userId')
+        console.log(storedUserId)
 
-        const cards = storedCards || getRandomCards(3, data)
-        
-        setRandomCards(cards)
-        localStorage.setItem('selectedRandomCards', JSON.stringify(cards))
+        if(storedUserId){
+            const storedCards = JSON.parse(localStorage.getItem('selectedRandomCards'))
+
+            const cards = storedCards || getRandomCards(3, data)
+            setRandomCards(cards)
+
+            console.log('las randomCards', cards)
+
+            updateUserResults(storedUserId, cards)
+            
+        }else {
+            // Si no hay un ID, guardamos igual en localStorage la seleccion de cartas 
+            const storedCards = JSON.parse(localStorage.getItem('selectedRandomCards'));
+            const cards = storedCards || getRandomCards(3, data);
+            setRandomCards(cards);
+            localStorage.setItem('selectedRandomCards', JSON.stringify(cards));
+        }
 
     }, [data])
 
