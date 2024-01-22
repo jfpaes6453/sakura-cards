@@ -22,16 +22,16 @@ export default function Table({ user }) {
     router.refresh()
   }
 
-  const handleSaveUsername = async () => {
+  const handleSaveUsername = () => {
     if (newUsername.trim() !== '') {
-      try {
-        await updateUsername(user.id, newUsername);
-      } catch (error) {
-        console.error('Error updating username:', error);
-      } finally {
-        setIsModifying(false);
-      }
-      router.refresh()
+      updateUsername(user.id, newUsername)
+        .then(() => {
+          setIsModifying(false);
+          router.refresh();
+        })
+        .catch((error) => {
+          console.error('Error updating username:', error);
+        });
     }
   };
 

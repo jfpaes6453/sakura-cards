@@ -45,23 +45,6 @@ export const deleteUser = async (userId) => {
     }
 }
 
-
-
-export const updateCards = async (userId, cards) => {
-    try {
-        const response = await axios.patch(`${baseUrl}/${userId}`, {
-            selectedCards: cards,
-        })
-
-        return response.data;
-
-    } catch (error) {
-        console.error('Error updating user with selected cards:', error);
-        throw error;
-    }
-};
-
-
 export const updateUserResults = async (userId, newResults) => {
     try {
         const response = await axios.patch(`${baseUrl}/${userId}`, { results: newResults });
@@ -71,3 +54,13 @@ export const updateUserResults = async (userId, newResults) => {
         throw error;
     }
 }
+
+export const deleteAllHistory = async () => {
+    try {
+        const response = await axios.delete(`${baseUrl}/deleteAll`);
+        return response.data;
+    } catch (error) {
+        console.error('Error al eliminar todo el historial:', error);
+        throw error;
+    }
+};

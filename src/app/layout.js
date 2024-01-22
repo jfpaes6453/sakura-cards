@@ -16,6 +16,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`bg-bg-color bg-bg-Img bg-cover ${antic.className} text-font-color`}>
         {children}
+        <section className='flex flex-row items-center w-full justify-center my-12'>
+
+        </section>
         <Footer/>
       </body>
     </html>
