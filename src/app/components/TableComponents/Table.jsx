@@ -36,8 +36,6 @@ export default function Table({ user }) {
   };
 
 
-  // console.log(user, user.results.meaning)
-
   const handleCancelEdit = () =>
     setIsModifying(false) || setNewUsername('');
 
@@ -56,7 +54,17 @@ export default function Table({ user }) {
         <td className="flex justify-center items-center  border-zinc-400 p-3">{user.username}</td>
       )}
       <td className="text-center border border-zinc-400 p-3">{user.date}</td>
-      <td className="border border-zinc-400 p-3">{user.results}</td>
+      <td className="text-center border border-zinc-400 p-3">
+      {Array.isArray(user.results) ? (
+        user.results.map((result) => (
+          <div key={result.id}>
+            <p> {result.meaning}</p>
+          </div>
+        ))
+      ) : (
+        <p>No hay resultados</p>
+      )}
+      </td>
       <td>
         <section className="flex justify-center gap-3 items-center">
           {isModifying ? (
