@@ -8,7 +8,7 @@ export default function idName() {
       <h1 className="text-[5.25rem] text-font-color text-center">
         Sakura Tarot
       </h1>
-      <img src="img/kinomoto.png" alt="Sakura Tarot" className="p-7" mt-0></img>
+      <img src="img/kinomoto.png" alt="Sakura Tarot" className="p-7"></img>
       
       <InputComponent />
 

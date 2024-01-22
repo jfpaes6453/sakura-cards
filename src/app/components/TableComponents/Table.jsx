@@ -36,6 +36,8 @@ export default function Table({ user }) {
   };
 
 
+  // console.log(user, user.results.meaning)
+
   const handleCancelEdit = () =>
     setIsModifying(false) || setNewUsername('');
 
@@ -54,7 +56,17 @@ export default function Table({ user }) {
         <td>{user.username}</td>
       )}
       <td>{user.date}</td>
-      <td>{user.results}</td>
+      <td>
+      {Array.isArray(user.results) ? (
+        user.results.map((result) => (
+          <div key={result.id}>
+            <p> {result.meaning}</p> 
+          </div>
+        ))
+      ) : (
+        <p>No hay resultados</p>
+      )}
+      </td>
       <td>
         <section>
           {isModifying ? (
