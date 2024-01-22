@@ -46,7 +46,7 @@ const InputComponent = () =>{
     });
 
     setNewUser('')
-    router.push('/choose-card?userId=${userId}')
+    router.push('/choose-card')
   }
 
   return (
