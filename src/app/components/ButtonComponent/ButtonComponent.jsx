@@ -1,6 +1,3 @@
-import Image from "next/image";
-
-
 export default function ButtonComponent({to, text}) {
     return (
         <button className="flex flex-row items-center text-3xl

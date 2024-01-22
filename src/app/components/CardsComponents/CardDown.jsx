@@ -1,36 +1,40 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import useFetch from '../../../utils/useFetch';
 import Card from './Card';
 import { useRouter } from 'next/navigation';
 
-const urlApi = 'https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/';
-const excludedIds = ['53', '55'];
 
 export default function CardDown() {
+  const urlApi = 'https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/';
+  const excludedIds = ['53', '55'];
+
   const { data, loading } = useFetch(urlApi);
   const router = useRouter();
 
   const [selectedCards, setSelectedCards] = useState([]);
   const [subtitleCard, setSubtitleCard] = useState('para el pasado');
   const [cardPositions, setCardPositions] = useState({});
+//  const [searchParams, setSearchParams] = useSearchParams()
 
-const calculateSelectedCardPosition = (index) => {
-  const verticalGap = 300;
-  const x = 300 + index * 200;
-  const y = verticalGap;
-  return { x, y };
-};
+//  const userId = router.query?.userId || searchParams.userId;
 
-const calculateUnselectedCardPosition = (index) => {
-  const centerX = window.innerWidth / 2.5;
-  const centerY = window.innerHeight / 2.5;
-  const radius = 640;
+  const calculateSelectedCardPosition = (index) => {
+    const verticalGap = 300;
+    const x = 300 + index * 200;
+    const y = verticalGap;
+    return { x, y };
+  };
 
-  const x = centerX + radius * Math.cos((index / data.length) * Math.PI);
-  const y = centerY + .45 * radius * Math.sin((index / data.length + 1) * Math.PI);
+  const calculateUnselectedCardPosition = (index) => {
+    const centerX = window.innerWidth / 2.5;
+    const centerY = window.innerHeight / 2.5;
+    const radius = 640;
 
-  return { x, y };
-};
+    const x = centerX + radius * Math.cos((index / data.length) * Math.PI);
+    const y = centerY + .45 * radius * Math.sin((index / data.length + 1) * Math.PI);
+
+    return { x, y };
+  };
 
 
   const handleCardSelect = (cardId) => {
@@ -55,11 +59,24 @@ const calculateUnselectedCardPosition = (index) => {
     const subtitles = ['para el presente', 'para el futuro', 'Tu lectura'];
     setSubtitleCard(subtitles[selectedCards.length] || subtitleCard);
 
+
     if (selectedCards.length === 3) {
       const queryParams = selectedCards.map((card, index) => `carta${index + 1}=${card}`).join('&');
       router.push(`/reading?${queryParams}`);
     }
   };
+// if (selectedCards.length === 3) {
+//      console.log('userId:', userId)
+//       userId: undefined
+
+//      const queryParams = selectedCards.map((card, index) => `carta${index + 1}=${card}`).join('&');
+//      router.push(`/reading?userId=${userId}&${queryParams}`);
+//       setSearchParams({ userId, ...searchParams });
+//       const queryParams = selectedCards.map((card, index) => `carta${index + 1}=${card}`).join('&');
+//       router.push(`/reading?${queryParams}`);
+
+//    }
+//  };
 
   const filteredData = data ? data.filter((card) => !excludedIds.includes(card.id)) : [];
 

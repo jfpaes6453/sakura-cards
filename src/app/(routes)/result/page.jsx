@@ -1,6 +1,6 @@
 'use client'
 import CardResult from "@/app/components/CardsComponents/CardResult"
-import ButtonsRendered from "../../components/ButtonComponent/ButtonsRendered"
+import ButtonsRendered from "@/app/components/ButtonComponent/ButtonsRendered"
 // import CardReading from "../../components/CardsComponents/CardReading"
 
 
