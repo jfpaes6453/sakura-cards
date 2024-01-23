@@ -3,7 +3,7 @@
     {
       "id": "829d08a1-13a2-4032-8bfc-b0456ebf0ec5",
       "date": "22/1/2024",
-      "username": "prueba 1003",
+      "username": "Meli",
       "results": [
         {
           "id": "16",
@@ -731,6 +731,195 @@
           "__v": 0
         }
       ]
+    },
+    {
+      "id": "bc60f1aa-f682-4d11-bf77-9195a2ee3b50",
+      "date": "23/1/2024",
+      "username": "Stephanie C.",
+      "results": [
+        {
+          "id": "3",
+          "cardNumber": 3,
+          "spanishName": "Sombra",
+          "englishName": "The Shadow",
+          "kanji": "影",
+          "Rōmaji": "Kage",
+          "appeardManga": "10",
+          "appeardAnime": "2",
+          "clowCard": "https://i.ibb.co/9W42mHB/Sombra.jpg",
+          "sakuraCard": "https://i.ibb.co/q7dgnKZ/Sombra-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Indica el sigilo.",
+          "__v": 0
+        },
+        {
+          "id": "40",
+          "cardNumber": 40,
+          "spanishName": "Ola",
+          "englishName": "The Wave",
+          "kanji": "波",
+          "Rōmaji": "Nami",
+          "appeardManga": "",
+          "appeardAnime": "35/36",
+          "clowCard": "https://i.ibb.co/9rt8KyL/Ola.jpg",
+          "sakuraCard": "https://i.ibb.co/KzL7xPt/Ola-Sakura.jpg",
+          "meaning": " Simboliza la adaptación, la comunicación, la expansión.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          }
+        },
+        {
+          "id": "12",
+          "cardNumber": 12,
+          "spanishName": "Flor",
+          "englishName": "The Flower",
+          "kanji": "花",
+          "Rōmaji": "Hana",
+          "appeardManga": "7",
+          "appeardAnime": "10",
+          "clowCard": "https://i.ibb.co/2cVhp4b/Flor.jpg",
+          "sakuraCard": "https://i.ibb.co/b3HYXyp/Flor-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": " Representa la salud, el comienzo de un amor, o el florecimiento de algo.",
+          "__v": 0
+        }
+      ]
+    },
+    {
+      "id": "43522449-7433-414a-b36e-e2b3744878b6",
+      "date": "23/1/2024",
+      "username": "steph",
+      "results": [
+        {
+          "id": "5",
+          "cardNumber": 5,
+          "spanishName": "Lluvia",
+          "englishName": "The Rain",
+          "kanji": "雨",
+          "Rōmaji": "Ame",
+          "appeardManga": "",
+          "appeardAnime": "4",
+          "clowCard": "https://i.ibb.co/ryfdTjL/Lluvia.jpg",
+          "sakuraCard": "https://i.ibb.co/YBxFKBt/Lluvia-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza la cancelación de planes o procesos debido a agentes externos.",
+          "__v": 0
+        },
+        {
+          "id": "41",
+          "cardNumber": 41,
+          "spanishName": "Equilibrio",
+          "englishName": "The Libra",
+          "kanji": "秤",
+          "Rōmaji": "Hakari",
+          "appeardManga": "",
+          "appeardAnime": "35/36",
+          "clowCard": "https://i.ibb.co/hySQgHY/Equilibrio.jpg",
+          "sakuraCard": "https://i.ibb.co/vJ319Jt/Equilibrio-Sakura.jpg",
+          "meaning": "Simboliza la verdad, la justicia, el balance del bien y el mal, el equilibrio.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          }
+        },
+        {
+          "id": "43",
+          "cardNumber": 43,
+          "spanishName": "Nieve",
+          "englishName": "The Snow",
+          "kanji": "雪",
+          "Rōmaji": "Yuki",
+          "appeardManga": "",
+          "appeardAnime": "36",
+          "clowCard": "https://i.ibb.co/XzZTfxN/Nieve.jpg",
+          "sakuraCard": "https://i.ibb.co/pbDdzt1/Nieve-Sakura.jpg",
+          "meaning": "Simboliza el bloqueo, la inmovilidad y el fin de los problemas.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b320ea33-7d9e-4c00-a65e-a66671c4663d",
+      "date": "23/1/2024",
+      "username": "ddd",
+      "results": [
+        {
+          "id": "44",
+          "cardNumber": 44,
+          "spanishName": "Voz",
+          "englishName": "The Voice",
+          "kanji": "声",
+          "Rōmaji": "Koe",
+          "appeardManga": "",
+          "appeardAnime": "37",
+          "clowCard": "https://i.ibb.co/B3N6Cxs/Voz.jpg",
+          "sakuraCard": "https://i.ibb.co/dMdGb3n/Voz-Sakura.jpg",
+          "meaning": "Simboliza la autoridad, la convicción.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          }
+        },
+        {
+          "id": "14",
+          "cardNumber": 14,
+          "spanishName": "Tiempo",
+          "englishName": "The Time",
+          "kanji": "時",
+          "Rōmaji": "Toki",
+          "appeardManga": "",
+          "appeardAnime": "12",
+          "clowCard": "https://i.ibb.co/nQjGfBQ/Tiempo.jpg",
+          "sakuraCard": "https://i.ibb.co/p4kcRMS/Tiempo-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": " Simboliza el paso del tiempo, su escasez.",
+          "__v": 0
+        },
+        {
+          "id": "26",
+          "cardNumber": 26,
+          "spanishName": "Pequeño",
+          "englishName": "The Little",
+          "kanji": "小",
+          "Rōmaji": "Shō",
+          "appeardManga": "",
+          "appeardAnime": "24",
+          "clowCard": "https://i.ibb.co/4mvMqT8/Peque-o.jpg",
+          "sakuraCard": "https://i.ibb.co/fdqWVKM/Peque-o-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza el retroceso, el decrecimiento, el fracaso.",
+          "__v": 0
+        }
+      ]
+    },
+    {
+      "id": "02043f59-8110-4265-852b-52e339a41e2e",
+      "date": "23/1/2024",
+      "username": "mel",
+      "results": []
     }
   ]
 }
