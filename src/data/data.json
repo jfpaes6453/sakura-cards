@@ -731,6 +731,67 @@
           "__v": 0
         }
       ]
+    },
+    {
+      "id": "be6814ac-eb38-4cac-af46-4d4843b6c411",
+      "date": "22/1/2024",
+      "username": "prueba 1013",
+      "results": [
+        {
+          "id": "42",
+          "cardNumber": 42,
+          "spanishName": "Atravesar",
+          "englishName": "The Through",
+          "kanji": "抜",
+          "Rōmaji": "Batsu",
+          "appeardManga": "",
+          "appeardAnime": "35/36",
+          "clowCard": "https://i.ibb.co/8jk5q45/Atravesar.jpg",
+          "sakuraCard": "https://i.ibb.co/KLPP4CK/Atravesar-Sakura.jpg",
+          "meaning": "Simboliza el camino, el cambio.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          }
+        },
+        {
+          "id": "17",
+          "cardNumber": 17,
+          "spanishName": "Tormenta",
+          "englishName": "The Storm",
+          "kanji": "嵐",
+          "Rōmaji": "Arashi",
+          "appeardManga": "",
+          "appeardAnime": "15",
+          "clowCard": "https://i.ibb.co/qW0ZdhR/Tormenta.jpg",
+          "sakuraCard": "https://i.ibb.co/CKKCGQj/Tormenta-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza el caos, los problemas.",
+          "__v": 0
+        },
+        {
+          "id": "30",
+          "cardNumber": 30,
+          "spanishName": "Disparo",
+          "englishName": "The Shot",
+          "kanji": "撃",
+          "Rōmaji": "Geki",
+          "appeardManga": "",
+          "appeardAnime": "28",
+          "clowCard": "https://i.ibb.co/17LzHvc/Disparo.jpg",
+          "sakuraCard": "https://i.ibb.co/7KB9jCR/Disparo-Sakura.jpg",
+          "meaning": "Representa la agresión.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          }
+        }
+      ]
     }
   ]
 }
