@@ -48,10 +48,11 @@ export default function Table({ user }) {
             placeholder="Modificar nombre"
             value={newUsername}
             onChange={(e) => setNewUsername(e.target.value)}
+            className='bg-bg-color'
           />
         </td>
       ) : (
-        <td className="flex justify-center items-center  border-zinc-400 p-3">{user.username}</td>
+        <td className="text-center border-zinc-400 p-3">{user.username}</td>
       )}
       <td className="text-center border border-zinc-400 p-3">{user.date}</td>
       <td className="text-center border border-zinc-400 p-3">
@@ -69,7 +70,7 @@ export default function Table({ user }) {
         <section className="flex justify-center gap-3 items-center">
           {isModifying ? (
             <>
-              <button onClick={handleSaveUsername}><FaRegSave /></button>
+              <button className="h-8" onClick={handleSaveUsername}><FaRegSave /></button>
               <button onClick={handleCancelEdit}><MdOutlineCancel /></button>
             </>
           ) : (

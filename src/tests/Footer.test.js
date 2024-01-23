@@ -13,7 +13,7 @@ describe('Footer', () => {
         expect(socialNetworks).toBeInTheDocument();
 
         // Verificar que el texto de copyright esté presente en el DOM
-        const copyrightText = screen.getByText(/© Copyright 2024 Clow Blossom Oracle/i);
+        const copyrightText = screen.getByText(/© Copyright 2024 Sakura Tarot/i);
         expect(copyrightText).toBeInTheDocument();
     });
 });
