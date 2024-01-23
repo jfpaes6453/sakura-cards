@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl = "http://localhost:3001/users"
+const baseUrl = "http://localhost:8000/users"
 axios.defaults.headers.post['Content-Type'] = 'application/json'
 axios.defaults.headers.post['Accept'] = 'application/json'
 
@@ -55,12 +55,4 @@ export const updateUserResults = async (userId, newResults) => {
     }
 }
 
-export const deleteAllHistory = async () => {
-    try {
-        const response = await axios.delete(`${baseUrl}/deleteAll`);
-        return response.data;
-    } catch (error) {
-        console.error('Error al eliminar todo el historial:', error);
-        throw error;
-    }
-};
+
