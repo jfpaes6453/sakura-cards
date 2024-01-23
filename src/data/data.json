@@ -243,6 +243,67 @@
           "__v": 0
         }
       ]
+    },
+    {
+      "id": "288b3606-83f2-40c2-bd64-c126b1e26c08",
+      "date": "23/1/2024",
+      "username": "prueba 004",
+      "results": [
+        {
+          "id": "6",
+          "cardNumber": 6,
+          "spanishName": "Bosque",
+          "englishName": "The Wood",
+          "kanji": "樹",
+          "Rōmaji": "Ki",
+          "appeardManga": "1",
+          "appeardAnime": "4",
+          "clowCard": "https://i.ibb.co/17154Dk/Bosque.jpg",
+          "sakuraCard": "https://i.ibb.co/hYMDk2F/Bosque-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza el dominio y la integración del medio, de la naturaleza.",
+          "__v": 0
+        },
+        {
+          "id": "14",
+          "cardNumber": 14,
+          "spanishName": "Tiempo",
+          "englishName": "The Time",
+          "kanji": "時",
+          "Rōmaji": "Toki",
+          "appeardManga": "",
+          "appeardAnime": "12",
+          "clowCard": "https://i.ibb.co/nQjGfBQ/Tiempo.jpg",
+          "sakuraCard": "https://i.ibb.co/p4kcRMS/Tiempo-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": " Simboliza el paso del tiempo, su escasez.",
+          "__v": 0
+        },
+        {
+          "id": "2",
+          "cardNumber": 2,
+          "spanishName": "Vuelo",
+          "englishName": "The fly",
+          "kanji": "翔",
+          "Rōmaji": "Shō",
+          "appeardManga": "2",
+          "appeardAnime": "1",
+          "clowCard": "https://i.ibb.co/nkySYwk/Vuelo.jpg",
+          "sakuraCard": "https://i.ibb.co/ry15JSV/Vuelo-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza la libertad, la evasión.",
+          "__v": 0
+        }
+      ]
     }
   ]
 }
