@@ -117,8 +117,8 @@ export default function CardDown() {
               isSelected={isSelected}
               style={style}
               className='p-[15rem] m-[15rem]'
-              backImage={card.cardsReverse.clowReverse}
-              frontImage={card.clowCard}
+              src={card.cardsReverse.clowReverse}
+              backImage={card.clowCard}
             />
           );
         })}

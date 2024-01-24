@@ -1,12 +1,11 @@
 import Image from 'next/image';
 import { useState } from 'react';
 
-const Card = ({ id, name, backImage, frontImage, onSelect, isSelected, style }) => {
+const Card = ({ id, name, backImage, frontImage, onSelect, isSelected, style, src }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleClick = () => {
     onSelect(id);
-    setIsFlipped(true);
   };
 
   const handleMouseEnter = () => {
@@ -16,7 +15,7 @@ const Card = ({ id, name, backImage, frontImage, onSelect, isSelected, style }) 
   const handleMouseLeave = () => {
     setIsFlipped(false);
   };
-  console.log(isFlipped)
+
   return (
     <div
       className={`absolute ${isSelected ? 'selected' : ''}`}
@@ -40,10 +39,20 @@ const Card = ({ id, name, backImage, frontImage, onSelect, isSelected, style }) 
           transformStyle: 'preserve-3d',
           transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)',
         }}
-      > {
-          isFlipped === false ? 
-        
-        (<div className="flip-card-front">
+      >
+        {/* Front of the card */}
+        <div className="flip-card-front">
+          <Image
+            src={src}
+            alt={name}
+            layout="fill"
+            objectFit="cover"
+            className="rounded-2xl max-w-none shadow-md cursor-pointer transition-transform duration-300 ease-in-out transform contrast-75 saturate-75 brightness-100 grayscale-2"
+          />
+        </div>
+
+        {/* Back of the card */}
+        <div className="flip-card-back" style={{ transform: 'rotateY(180deg)' }}>
           <Image
             src={backImage}
             alt={name}
@@ -51,16 +60,7 @@ const Card = ({ id, name, backImage, frontImage, onSelect, isSelected, style }) 
             objectFit="cover"
             className="rounded-2xl max-w-none shadow-md cursor-pointer transition-transform duration-300 ease-in-out transform contrast-75 saturate-75 brightness-100 grayscale-2"
           />
-        </div>) : 
-        (<div className="flip-card-back" style={{ transform: 'rotateY(180deg)' }}>
-          <Image
-            src={frontImage}
-            alt={name}
-            layout="fill"
-            objectFit="cover"
-            className="rounded-2xl max-w-none shadow-md cursor-pointer transition-transform duration-300 ease-in-out transform contrast-75 saturate-75 brightness-100 grayscale-2"
-          />
-        </div>)}
+        </div>
       </div>
     </div>
   );
