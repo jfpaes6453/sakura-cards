@@ -37,7 +37,7 @@ export default function CardDown() {
     if (selectedCards.length < 3 && !selectedCards.includes(cardId)) {
       const newSelectedCards = [...selectedCards, cardId];
       setSelectedCards(newSelectedCards);
-
+      console.log(newSelectedCards)
       const newCardPositions = newSelectedCards.reduce((positions, cardId, index) => {
         const position = calculateSelectedCardPosition(index);
         return {
