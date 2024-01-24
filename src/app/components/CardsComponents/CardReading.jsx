@@ -48,12 +48,13 @@ export default function CardReading() {
                 {randomCards.map((card, index) => (
                         <li className="flex md:flex-row flex-col px-14 my-8 py-7 items-center">
                             <Card
-                            key={card.id}
-                            id={card.id}
-                            name={card.spanishName}
-                            src={card.clowCard}
-                            onSelect={() => {}}
-                            isSelected={false}
+                             key={card.id}
+                             id={card.id}
+                             name={card.spanishName}
+                             src={card.clowCard}
+                             backImage={card.cardsReverse.clowReverse}
+                             onSelect={() => {}}
+                             isSelected={false}
                             style={{}} 
                             />
                             <article className="md:mx-36 md:mt-auto mt-[400px] opacity-75 md:pl-44">
