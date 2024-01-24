@@ -83,22 +83,22 @@ export default function Table({ user }) {
       </td>
     </tr>
     {/* Mobile version */}
-    <div key={user.id} className='md:hidden'>
-            <p className="text-start border border-zinc-400 p-3">{user.username}</p>
-            <p className="text-start border border-zinc-400 p-3">{user.date}</p>
-            <p className="text-center border border-zinc-400 p-3">
-              {Array.isArray(user.results) ? (
-                user.results.map((result) => (
-                  <div key={result.id}>
-                    <p> {result.meaning}</p>
-                  </div>
-                ))
-              ) : (
-                <p>No hay resultados</p>
-              )}
-            </p>
-            
-    </div>
+      <div key={user.id} className='md:hidden'>
+              <p className="text-start border border-zinc-400 p-3">{user.username}</p>
+              <p className="text-start border border-zinc-400 p-3">{user.date}</p>
+              <p className="text-center border border-zinc-400 p-3">
+                {Array.isArray(user.results) ? (
+                  user.results.map((result) => (
+                    <div key={result.id}>
+                      <p> {result.meaning}</p>
+                    </div>
+                  ))
+                ) : (
+                  <p>No hay resultados</p>
+                )}
+              </p>
+              
+      </div>
     </>
   );
 }
