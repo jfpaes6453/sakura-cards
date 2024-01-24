@@ -7,13 +7,27 @@ const urlApi = 'https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/';
 const excludedIds = ['53', '55'];
 
 export default function CardDown() {
-  const { data, loading } = useFetch(urlApi);
-  const router = useRouter();
 
-  const [selectedCards, setSelectedCards] = useState([]);
+  const { data, loading } = useFetch(urlApi)
+  const [cards, setCards] = useState([]);
+
+  const [selectedCards, setSelectedCards] = useState([])
   const [subtitleCard, setSubtitleCard] = useState('para el pasado');
   const [cardPositions, setCardPositions] = useState({});
   const [areCardsVisible, setAreCardsVisible] = useState(true);
+  const [userSelection, setUserSelection] = useState([]);
+
+  const router = useRouter()
+
+
+  useEffect(() => {
+    if (data) {
+      const shuffledCards = [...data].sort(() => Math.random() - 0.5);
+      setCards(shuffledCards);
+    }
+  }, [data]);
+
+
 
   const calculateSelectedCardPosition = (index) => {
     const verticalGap = 300;
@@ -36,7 +50,10 @@ export default function CardDown() {
   const handleCardSelect = (cardId) => {
     if (selectedCards.length < 3 && !selectedCards.includes(cardId)) {
       const newSelectedCards = [...selectedCards, cardId];
-      setSelectedCards(newSelectedCards);
+      setSelectedCards(newSelectedCards)
+
+      localStorage.setItem('userSelection', JSON.stringify(newSelectedCards))
+      console.log(newSelectedCards);
 
       const newCardPositions = newSelectedCards.reduce((positions, cardId, index) => {
         const position = calculateSelectedCardPosition(index);
@@ -56,13 +73,13 @@ export default function CardDown() {
     setSubtitleCard(subtitles[selectedCards.length] || subtitleCard);
 
     if (selectedCards.length === 3) {
-      const queryParams = selectedCards.map((card, index) => `carta${index + 1}=${card}`).join('&');
-      router.push(`/reading?${queryParams}`);
+      // const queryParams = selectedCards.map((card, index) => `carta${index + 1}=${card}`).join('&');
+      router.push(`/reading`);
       setAreCardsVisible(false);
     }
   };
 
-  const filteredData = data ? data.filter((card) => !excludedIds.includes(card.id)) : [];
+  const filteredData = cards ? cards.filter((card) => !excludedIds.includes(card.id)) : [];
 
   const calculateCardPosition = (isSelected, cardId, index) => {
     const position = isSelected ? cardPositions[cardId] : calculateUnselectedCardPosition(index);
@@ -117,8 +134,9 @@ export default function CardDown() {
               isSelected={isSelected}
               style={style}
               className='p-[15rem] m-[15rem]'
-              src={card.cardsReverse.clowReverse}
-              backImage={card.clowCard}
+              src={card.cardsReverse.clowReverse} 
+              backImage={card.cardsReverse.clowReverse}
+              frontImage={card.clowCard}
             />
           );
         })}

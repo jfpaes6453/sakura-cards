@@ -5,7 +5,8 @@ const Card = ({ id, name, backImage, frontImage, onSelect, isSelected, style, sr
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleClick = () => {
-    onSelect(id);
+    onSelect(id)
+    setIsFlipped(!isFlipped)
   };
 
   const handleMouseEnter = () => {
@@ -43,7 +44,7 @@ const Card = ({ id, name, backImage, frontImage, onSelect, isSelected, style, sr
         {/* Front of the card */}
         <div className="flip-card-front">
           <Image
-            src={src}
+            src={isFlipped ? frontImage : backImage}
             alt={name}
             layout="fill"
             objectFit="cover"
@@ -54,7 +55,7 @@ const Card = ({ id, name, backImage, frontImage, onSelect, isSelected, style, sr
         {/* Back of the card */}
         <div className="flip-card-back" style={{ transform: 'rotateY(180deg)' }}>
           <Image
-            src={backImage}
+            src={isFlipped ? frontImage : backImage}
             alt={name}
             layout="fill"
             objectFit="cover"
