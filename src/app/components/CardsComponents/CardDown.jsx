@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import useFetch from '../../../utils/useFetch';
 import Card from './Card';
 import { useRouter } from 'next/navigation';
@@ -8,12 +8,26 @@ export default function CardDown() {
   const urlApi = 'https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/';
   const excludedIds = ['53', '55'];
 
-  const { data, loading } = useFetch(urlApi);
-  const router = useRouter();
+  const { data, loading } = useFetch(urlApi)
+  const [cards, setCards] = useState([]);
 
-  const [selectedCards, setSelectedCards] = useState([]);
+  const [selectedCards, setSelectedCards] = useState([])
   const [subtitleCard, setSubtitleCard] = useState('para el pasado');
   const [cardPositions, setCardPositions] = useState({});
+  const [areCardsVisible, setAreCardsVisible] = useState(true);
+  // const [userSelection, setUserSelection] = useState([]);
+
+  const router = useRouter()
+
+
+  useEffect(() => {
+    if (data) {
+      const shuffledCards = [...data].sort(() => Math.random() - 0.5);
+      setCards(shuffledCards);
+    }
+  }, [data]);
+
+
 
   const calculateSelectedCardPosition = (index) => {
     const verticalGap = 300;
@@ -28,16 +42,18 @@ export default function CardDown() {
     const radius = 640;
 
     const x = centerX + radius * Math.cos((index / data.length) * Math.PI);
-    const y = centerY + .45 * radius * Math.sin((index / data.length + 1) * Math.PI);
+    const y = centerY + 0.45 * radius * Math.sin((index / data.length + 1) * Math.PI);
 
     return { x, y };
   };
 
-
   const handleCardSelect = (cardId) => {
     if (selectedCards.length < 3 && !selectedCards.includes(cardId)) {
       const newSelectedCards = [...selectedCards, cardId];
-      setSelectedCards(newSelectedCards);
+      setSelectedCards(newSelectedCards)
+
+      localStorage.setItem('userSelection', JSON.stringify(newSelectedCards))
+      console.log(newSelectedCards);
 
       const newCardPositions = newSelectedCards.reduce((positions, cardId, index) => {
         const position = calculateSelectedCardPosition(index);
@@ -58,22 +74,39 @@ export default function CardDown() {
 
 
     if (selectedCards.length === 3) {
-      const queryParams = selectedCards.map((card, index) => `carta${index + 1}=${card}`).join('&');
-      router.push(`/reading?${queryParams}`);
+      // const queryParams = selectedCards.map((card, index) => `carta${index + 1}=${card}`).join('&');
+      router.push(`/reading`);
+      setAreCardsVisible(false);
     }
   }
 
-  const filteredData = data ? data.filter((card) => !excludedIds.includes(card.id)) : [];
+  const filteredData = cards ? cards.filter((card) => !excludedIds.includes(card.id)) : [];
 
   const calculateCardPosition = (isSelected, cardId, index) => {
     const position = isSelected ? cardPositions[cardId] : calculateUnselectedCardPosition(index);
-
-    const adjustedY = isSelected ? position.y + 150 : position.y
+  
+    const adjustedY = isSelected ? position.y + 150 : position.y;
+    const adjustedX = isSelected ? position.x + 100 : position.x;
+  
+    const translateY = isSelected && selectedCards.length === 3 ? '-270px' : '0';
 
     return isSelected
-      ? `translate(50%, 50%) translate(${position.x}px, ${adjustedY}px)`
-      : `translate(50%, 50%) translate(${position.x}px, ${position.y}px)`;
-  };
+      ? `translate(50%, 50%) translate(${adjustedX}px, ${adjustedY}px) scale(1.2) translateY(${translateY})`
+      : areCardsVisible
+      ? `translate(50%, 50%) translate(${position.x}px, ${position.y}px)`
+      : 'translate(50%, 50%) translate(0, 0)';
+  };  
+
+  const calculateCardOpacity = (isSelected) => (areCardsVisible || isSelected ? 1 : 0);
+
+  useEffect(() => {
+    if (selectedCards.length === 3) {
+      const timeoutId = setTimeout(() => {
+        setAreCardsVisible(false);
+      }, 500);
+      return () => clearTimeout(timeoutId);
+    }
+  }, [selectedCards]);
 
   if (loading) {
     return <p className="text-[3.5rem] mx-28">Cargando...</p>;
@@ -85,7 +118,13 @@ export default function CardDown() {
         <h3 className="text-center md:text-5xl text-4xl">{subtitleCard}</h3>
         {filteredData.map((card, index) => {
           const isSelected = selectedCards.includes(card.id);
-          const style = { transform: calculateCardPosition(isSelected, card.id, index) };
+          const style = {
+            transform: calculateCardPosition(isSelected, card.id, index),
+            opacity: calculateCardOpacity(isSelected),
+            transition: 'transform 0.5s ease, opacity 0.5s ease',
+            zIndex: isSelected ? 1 : 0,
+          };
+          
 
           return (
             <Card
@@ -96,11 +135,13 @@ export default function CardDown() {
               isSelected={isSelected}
               style={style}
               className='p-[15rem] m-[15rem]'
-              src={card.cardsReverse.clowReverse}
+              src={card.cardsReverse.clowReverse} 
+              backImage={card.cardsReverse.clowReverse}
+              frontImage={card.clowCard}
             />
           );
         })}
       </section>
     </div>
   );
-};
+}
