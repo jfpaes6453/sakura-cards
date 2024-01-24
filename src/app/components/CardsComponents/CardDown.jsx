@@ -3,10 +3,10 @@ import useFetch from '../../../utils/useFetch';
 import Card from './Card';
 import { useRouter } from 'next/navigation';
 
-const urlApi = 'https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/';
-const excludedIds = ['53', '55'];
 
 export default function CardDown() {
+  const urlApi = 'https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/';
+  const excludedIds = ['53', '55'];
 
   const { data, loading } = useFetch(urlApi)
   const [cards, setCards] = useState([]);
@@ -15,7 +15,7 @@ export default function CardDown() {
   const [subtitleCard, setSubtitleCard] = useState('para el pasado');
   const [cardPositions, setCardPositions] = useState({});
   const [areCardsVisible, setAreCardsVisible] = useState(true);
-  const [userSelection, setUserSelection] = useState([]);
+  // const [userSelection, setUserSelection] = useState([]);
 
   const router = useRouter()
 
@@ -72,12 +72,13 @@ export default function CardDown() {
     const subtitles = ['para el presente', 'para el futuro', 'Tu lectura'];
     setSubtitleCard(subtitles[selectedCards.length] || subtitleCard);
 
+
     if (selectedCards.length === 3) {
       // const queryParams = selectedCards.map((card, index) => `carta${index + 1}=${card}`).join('&');
       router.push(`/reading`);
       setAreCardsVisible(false);
     }
-  };
+  }
 
   const filteredData = cards ? cards.filter((card) => !excludedIds.includes(card.id)) : [];
 
@@ -88,7 +89,7 @@ export default function CardDown() {
     const adjustedX = isSelected ? position.x + 100 : position.x;
   
     const translateY = isSelected && selectedCards.length === 3 ? '-270px' : '0';
-  
+
     return isSelected
       ? `translate(50%, 50%) translate(${adjustedX}px, ${adjustedY}px) scale(1.2) translateY(${translateY})`
       : areCardsVisible

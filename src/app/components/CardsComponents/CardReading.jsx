@@ -3,10 +3,14 @@ import { useState, useEffect } from "react";
 import useFetch from "@/utils/useFetch";
 import Card from "./Card";
 import { Noto_Serif_JP } from "next/font/google";
+import { updateUserResults } from "@/utils/apiAxios";
+
 
 const inder = Noto_Serif_JP({ weight: ['200'], subsets: ['latin'] });
 
+
 const CardReading = () => {
+
   const [randomCards, setRandomCards] = useState([]);
   const urlApi = 'https://6388b6e5a4bb27a7f78f96a5.mockapi.io/sakura-cards/';
   const { data, loading, error } = useFetch(urlApi);
@@ -16,10 +20,32 @@ const CardReading = () => {
       return;
     }
 
-    const storedCardIds = JSON.parse(localStorage.getItem('userSelection')) || [];
-    const selectedCardsFromApi = storedCardIds.map((cardId) => data.find((card) => card.id === cardId));
+    const storedUserId = localStorage.getItem('userId')
+        console.log(storedUserId)
 
-    setRandomCards(selectedCardsFromApi);
+        if(storedUserId){
+          const storedCardIds = JSON.parse(localStorage.getItem('userSelection')) || [];
+
+          const selectedCardsFromApi = storedCardIds.map((cardId) => data.find((card) => card.id === cardId));
+
+          setRandomCards(selectedCardsFromApi);
+
+          // console.log('las randomCards', cards)
+
+          updateUserResults(storedUserId, selectedCardsFromApi)
+          
+      }else {
+          // Si no hay un ID, guardamos igual en localStorage la seleccion de cartas 
+          const storedCardIds = JSON.parse(localStorage.getItem('userSelection'))
+          const selectedCardsFromApi = storedCardIds.map((cardId) => data.find((card) => card.id === cardId))
+          setRandomCards(selectedCardsFromApi)
+          localStorage.setItem('userSelection', JSON.stringify(selectedCardsFromApi));
+      }
+
+    // const storedCardIds = JSON.parse(localStorage.getItem('userSelection')) || [];
+    // const selectedCardsFromApi = storedCardIds.map((cardId) => data.find((card) => card.id === cardId));
+
+    // setRandomCards(selectedCardsFromApi);
   }, [data]);
 
   if (loading) {
@@ -40,9 +66,9 @@ const CardReading = () => {
             <Card
               id={card.id}
               name={card.spanishName}
-              src={card.clowCard}
-              frontImage={card.cardsReverse.clowReverse}
+              src={card.cardsReverse.clowReverse}
               backImage={card.clowCard}
+              frontImage={card.cardsReverse.clowReverse}
               onSelect={() => {}}
               isSelected={false}
               style={{}}

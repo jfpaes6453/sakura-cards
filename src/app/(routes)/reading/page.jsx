@@ -1,7 +1,6 @@
 'use client'
-import ButtonsRendered from "../../components/ButtonComponent/ButtonsRendered"
-import CardReading from "../../components/CardsComponents/CardReading"
-
+import CardReading from "@/app/components/CardsComponents/CardReading"
+import ButtonsRendered from "@/app/components/ButtonComponent/ButtonsRendered"
 
 const pageReading = () => {
     return (
@@ -16,3 +15,4 @@ const pageReading = () => {
 }
 
 export default pageReading
+
