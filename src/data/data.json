@@ -1,4 +1,72 @@
 {
-  "users": [],
+  "users": [
+    {
+      "id": "23f90a16-c6ef-4a54-ae2c-2849a5d83e83",
+      "date": "25/1/2024",
+      "username": "Alicia",
+      "results": [
+        {
+          "id": "21",
+          "cardNumber": 21,
+          "spanishName": "Movimiento",
+          "englishName": "The Move",
+          "kanji": "移",
+          "Rōmaji": "Utsuri",
+          "appeardManga": "",
+          "appeardAnime": "19",
+          "clowCard": "https://i.ibb.co/0f92bH5/Movimiento.jpg",
+          "sakuraCard": "https://i.ibb.co/R0W9hTz/Movimiento-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza un cambio, un movimiento.",
+          "__v": 0
+        },
+        {
+          "id": "12",
+          "cardNumber": 12,
+          "spanishName": "Flor",
+          "englishName": "The Flower",
+          "kanji": "花",
+          "Rōmaji": "Hana",
+          "appeardManga": "7",
+          "appeardAnime": "10",
+          "clowCard": "https://i.ibb.co/2cVhp4b/Flor.jpg",
+          "sakuraCard": "https://i.ibb.co/b3HYXyp/Flor-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": " Representa la salud, el comienzo de un amor, o el florecimiento de algo.",
+          "__v": 0
+        },
+        {
+          "id": "34",
+          "cardNumber": 34,
+          "spanishName": "Creación",
+          "englishName": "The Create",
+          "kanji": "創",
+          "Rōmaji": "Sō",
+          "appeardManga": "",
+          "appeardAnime": "31",
+          "clowCard": "https://i.ibb.co/Jqs1nHj/Creaci-n.jpg",
+          "sakuraCard": "https://i.ibb.co/sWnYwzC/Creaci-n-Sakura.jpg",
+          "meaning": "Simboliza la creación, la imaginación, el desafío.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "aad63a67-f73f-4c87-a0a5-957bdca6c350",
+      "date": "25/1/2024",
+      "username": "Alicia",
+      "results": []
+    }
+  ],
   "deleteAllUsers": []
 }
