@@ -1,58 +1,64 @@
 {
   "users": [
     {
-      "id": "23f90a16-c6ef-4a54-ae2c-2849a5d83e83",
+      "id": "024af27d-dd6f-43f0-9a0d-a00ff3adcffb",
       "date": "25/1/2024",
-      "username": "Alicia",
+      "username": "ali",
+      "results": []
+    },
+    {
+      "id": "8704fc49-45b1-42d8-b467-012364f1ee79",
+      "date": "25/1/2024",
+      "username": "alicia",
       "results": [
         {
-          "id": "21",
-          "cardNumber": 21,
-          "spanishName": "Movimiento",
-          "englishName": "The Move",
-          "kanji": "移",
-          "Rōmaji": "Utsuri",
-          "appeardManga": "",
-          "appeardAnime": "19",
-          "clowCard": "https://i.ibb.co/0f92bH5/Movimiento.jpg",
-          "sakuraCard": "https://i.ibb.co/R0W9hTz/Movimiento-Sakura.jpg",
+          "id": "52",
+          "cardNumber": 52,
+          "spanishName": "Tierra",
+          "englishName": "The Earthy",
+          "kanji": "地",
+          "Rōmaji": "Chi",
+          "appeardManga": "24",
+          "appeardAnime": "45",
+          "clowCard": "https://i.ibb.co/cvJHXG4/Tierra.jpg",
+          "sakuraCard": "https://i.ibb.co/1nd4cL8/Tierra-Sakura.jpg",
+          "meaning": "Simboliza la solidez, la sujeción y la vida.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          }
+        },
+        {
+          "id": "4",
+          "cardNumber": 4,
+          "spanishName": "Agua",
+          "englishName": "The Watery",
+          "kanji": "水",
+          "Rōmaji": "Mizu",
+          "appeardManga": "3",
+          "appeardAnime": "3",
+          "clowCard": "https://i.ibb.co/KLrv3BF/Agua.jpg",
+          "sakuraCard": "https://i.ibb.co/HxLpWy5/Agua-Sakura.jpg",
           "cardsReverse": {
             "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
             "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
           },
-          "meaning": "Simboliza un cambio, un movimiento.",
+          "meaning": "Simboliza los sentimientos, la expansión, la habilidad de la adivinación.",
           "__v": 0
         },
         {
-          "id": "12",
-          "cardNumber": 12,
-          "spanishName": "Flor",
-          "englishName": "The Flower",
-          "kanji": "花",
-          "Rōmaji": "Hana",
-          "appeardManga": "7",
-          "appeardAnime": "10",
-          "clowCard": "https://i.ibb.co/2cVhp4b/Flor.jpg",
-          "sakuraCard": "https://i.ibb.co/b3HYXyp/Flor-Sakura.jpg",
-          "cardsReverse": {
-            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
-            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
-          },
-          "meaning": " Representa la salud, el comienzo de un amor, o el florecimiento de algo.",
-          "__v": 0
-        },
-        {
-          "id": "34",
-          "cardNumber": 34,
-          "spanishName": "Creación",
-          "englishName": "The Create",
-          "kanji": "創",
-          "Rōmaji": "Sō",
+          "id": "38",
+          "cardNumber": 38,
+          "spanishName": "Flecha",
+          "englishName": "The Arrow",
+          "kanji": "矢",
+          "Rōmaji": "Ya",
           "appeardManga": "",
-          "appeardAnime": "31",
-          "clowCard": "https://i.ibb.co/Jqs1nHj/Creaci-n.jpg",
-          "sakuraCard": "https://i.ibb.co/sWnYwzC/Creaci-n-Sakura.jpg",
-          "meaning": "Simboliza la creación, la imaginación, el desafío.",
+          "appeardAnime": "Movie n° 1",
+          "clowCard": "https://i.ibb.co/8x77Jxw/Flecha.jpg",
+          "sakuraCard": "https://i.ibb.co/BrtpnY6/Flecha-Sakura.jpg",
+          "meaning": " Esta carta simboliza la precisión, la certeza, un objetivo.",
           "__v": 0,
           "cardsReverse": {
             "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
@@ -60,12 +66,6 @@
           }
         }
       ]
-    },
-    {
-      "id": "aad63a67-f73f-4c87-a0a5-957bdca6c350",
-      "date": "25/1/2024",
-      "username": "Alicia",
-      "results": []
     }
   ],
   "deleteAllUsers": []
