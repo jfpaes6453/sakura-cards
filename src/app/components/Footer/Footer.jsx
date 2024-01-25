@@ -11,7 +11,7 @@ export default function Footer() {
             </div>
             <SocialNetworks />        
             
-            <p className='text-2xl text-center px-8 py-8 md:py-0 md:order-3'>© Copyright 2024 Sakura Tarot</p>
+            <p className='text-2xl text-center px-8 py-8 md:py-0 md:order-3 text-[#b3a9ab]'>© Copyright 2024 Sakura Tarot</p>
         </footer>
     )
 }

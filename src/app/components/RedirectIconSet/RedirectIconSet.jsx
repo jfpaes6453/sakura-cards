@@ -6,7 +6,7 @@ import { useEffect } from "react";
 
 const RedirectIconSet = () => {
     const router = useRouter()
-    const handleRefresth =()=>{
+    const handleRefresh =()=>{
         router.refresh()
     }
     
@@ -15,10 +15,13 @@ const RedirectIconSet = () => {
     return (
         <section className="flex items-center gap-8 text-4xl">           
             <Link href="/">
-                <FaHome className="h-[53px] w-[53px] opacity-75"/>
+                <FaHome style={{ color: "#b3a9ab", height: "30px", width: "30px" }} />
             </Link>
             <Link href="/results-history">
-                <FaHistory className="h-[50px] w-[50px] opacity-75" onClick={handleRefresth}/>
+            <FaHistory
+                    style={{ color: "#b3a9ab", height: "30px", width: "30px" }}
+                    onClick={handleRefresh}
+                />
             </Link>
         </section>
     )
