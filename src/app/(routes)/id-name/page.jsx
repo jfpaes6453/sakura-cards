@@ -1,5 +1,6 @@
 import React from 'react';
 import InputComponent from '@/app/components/InputComponent/InputComponent';
+import Image from 'next/image';
 
 
 export default function idName() {
@@ -8,7 +9,13 @@ export default function idName() {
       <h1 className="text-[5.25rem] text-font-color text-center">
         Sakura Tarot
       </h1>
-      <img src="img/kinomoto.png" alt="Sakura Tarot" className="p-7"></img>
+      <Image 
+        src="/img/Kinomoto.png" 
+        alt="Sakura Tarot" 
+        className="p-7"
+        width={496}
+        height={456}
+      />
       
       <InputComponent />
 

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
+
 export default function MainComponent() {
   return (
     <div className="container mx-auto">
@@ -59,9 +60,9 @@ export default function MainComponent() {
         <p className=" text-font-color mb-4 text-[1.5rem] text-center p-9" >
         ¡Bienvenido a nuestra plataforma de tarot! Descubre las revelaciones
         del pasado, presente y futuro con las cartas clown. Sigue estos
-      sencillos pasos para obtener tu lectura personalizada. Explora las
-       cartas y elige las 3 que más te llame la atención, con esas 3 cartas
-     podremos adentrarnos en tu pasado, presente y futuro.
+        sencillos pasos para obtener tu lectura personalizada. Explora las
+        cartas y elige las 3 que más te llame la atención, con esas 3 cartas
+      podremos adentrarnos en tu pasado, presente y futuro.
         </p>
         <div className="mx-auto flex items-center justify-center ">
           <Link href="/id-name">

@@ -18,11 +18,11 @@ export default function Accordion({ user }) {
 
     const handleUpdateUsername = () => {
         setIsModifying(true);
-        setIsAccordionOpen(true); // Abre el acordeón al editar
+        setIsAccordionOpen(true); 
     };
 
     const handleDelete = () => {
-        window.confirm('Eliminar?') && deleteUser(id);
+        deleteUser(id);
         router.refresh();
     };
 
@@ -35,13 +35,13 @@ export default function Accordion({ user }) {
                 })
                 .catch((error) => {
                     console.error('Error updating username:', error);
-                });
+            });
         }
     };
 
     const handleCancelEdit = () => {
         setIsModifying(false);
-        setNewUsername(''); // Limpiar el nuevo nombre al cancelar la edición
+        setNewUsername(''); 
     };
 
     const handleSummaryClick = () => setIsAccordionOpen(!isAccordionOpen);
@@ -49,17 +49,15 @@ export default function Accordion({ user }) {
     return (
         <div key={id} className='md:hidden sm:w-full'>
             <details
-
                 className="m-0 border-2xl p-5"
                 open={isAccordionOpen}
             >
                 <summary 
                 className="cursor-pointer flex items-center gap-3" onClick={handleSummaryClick}
-                style={{ listStyle: 'none' }} // Oculta el ::marker
+                style={{ listStyle: 'none' }} 
                 >
                     {isAccordionOpen ? <FaChevronCircleDown className="ml-2" /> : <FaChevronCircleUp className="ml-2" />}
-                    <span>
-                        NOMBRE: {username}</span>
+                    <span>NOMBRE: {username}</span>
                 </summary>
                 <div className='pl-6'>
                     {isModifying && (

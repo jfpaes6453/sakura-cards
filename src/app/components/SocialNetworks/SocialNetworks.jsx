@@ -31,14 +31,14 @@ export default function SocialNetworks() {
         <div  data-testid="social-networks" className='flex flex-row'>
             {
                 socialNetworks.map((network) => (
-                <a key={network.name} href={network.url} target="_blank" className="p-3">
-                    <Image 
-                    src={network.icon}
-                    alt= {`${network.name} Icon`}
-                    width={30}
-                    height={30}
-                    />
-                </a>
+                    <a key={network.name} href={network.url} target="_blank" className="p-3">
+                        <Image 
+                        src={network.icon}
+                        alt= {`${network.name} Icon`}
+                        width={30}
+                        height={30}
+                        />
+                    </a>
                 ))
             }
             

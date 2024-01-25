@@ -20,7 +20,7 @@ export default function Table({ user }) {
     setIsModifying(true);
 
   const handleDelete = () => {
-    window.confirm('Eliminar?') && deleteUser(user.id)
+    deleteUser(user.id)
     router.refresh()
   }
 
@@ -43,8 +43,8 @@ export default function Table({ user }) {
 
   return (
     <>
-    {/* Desktop Version */}
-    <tr key={user.id} className="border border-zinc-400 hidden md:table-row">
+      {/* Desktop Version */}
+      <tr key={user.id} className="border border-zinc-400 hidden md:table-row">
       {isModifying ? (
         <td className="border border-zinc-400 p-3">
           <input
@@ -83,36 +83,36 @@ export default function Table({ user }) {
           {!isModifying && <button onClick={handleDelete}><RiDeleteBinLine /></button>}
         </section>
       </td>
-    </tr>
-    {/* Mobile version */}
-    <div key={user.id} className='md:hidden'>
-            <p className="text-start border border-zinc-400 p-3">{user.username}</p>
-            <p className="text-start border border-zinc-400 p-3">{user.date}</p>
-            <p className="text-center border border-zinc-400 p-3">
-              {Array.isArray(user.results) ? (
-                user.results.map((result) => (
-                  <div key={result.id}>
-                    <p> {result.meaning}</p>
-                  </div>
+      </tr>
+      {/* Mobile version */}
+      <div key={user.id} className='md:hidden'>
+      <p className="text-start border border-zinc-400 p-3">{user.username}</p>
+      <p className="text-start border border-zinc-400 p-3">{user.date}</p>
+      <p className="text-center border border-zinc-400 p-3">
+        {Array.isArray(user.results) ? (
+          user.results.map((result) => (
+            <div key={result.id}>
+              <p> {result.meaning}</p>
+            </div>
+      
+          ))
+        ) : (
+          <p>No hay resultados</p>
+        )}
+      </p>
+      <section className="flex justify-center gap-3 items-center p-3">
+        {isModifying ? (
+          <div>
+            <button className="h-8" onClick={handleSaveUsername}><FaRegSave /></button>
+            <button onClick={handleCancelEdit}><MdOutlineCancel /></button>
+          </div>
+        ) : (
+          <button onClick={handleUpdateUsername}><FiEdit /></button>
+        )}
+        { !isModifying && <button onClick={handleDelete}><RiDeleteBinLine /></button> }
+      </section>
             
-                ))
-              ) : (
-                <p>No hay resultados</p>
-              )}
-            </p>
-            <section className="flex justify-center gap-3 items-center p-3">
-            {isModifying ? (
-              <div>
-                <button className="h-8" onClick={handleSaveUsername}><FaRegSave /></button>
-                <button onClick={handleCancelEdit}><MdOutlineCancel /></button>
-              </div>
-            ) : (
-              <button onClick={handleUpdateUsername}><FiEdit /></button>
-            )}
-            {!isModifying && <button onClick={handleDelete}><RiDeleteBinLine /></button>}
-          </section>
-            
-    </div>
+      </div>
     </>
   );
 }
