@@ -11,6 +11,8 @@ Welcome to our enchanting Sakura Tarot page! 🌟
 Discover the Meanings:
 
 After making your choices, explore the meanings of each selected card. Our page will provide detailed and insightful interpretations based on tarot tradition, enriched with the unique essence of the Sakura Deck.
+You will also be able to review previous runs thanks to the implementation of the history, using a json-server, and not only that, you will be able to edit or delete this history.
+
 
 🛠️ Technologies Used: This project has been developed using the following technologies:
 
@@ -28,11 +30,36 @@ Cypress: To ensure code quality and reliability, we have implemented tests with 
 
 Clone this repository to your local machine.
 Install dependencies with the command npm install.
-Run the application with npm run dev.
+Run the application with 
+- npm install
+- npm run json-server 
+- npm run dev.
 Open your browser and visit http://localhost:3000.
 Immerse yourself in the magical world of tarot with the Sakura Deck and discover the answers that the universe has in store for you! 🌈✨
 
-----------------------------------------------------------------------------------------------
+ Melissa Casola
+[🔗](https://www.linkedin.com/in/melissa-casola/)
+     (https://github.com/melitacasola)
+
+
+Stephanie Céspedes
+[🔗](https://www.linkedin.com/in/stephanie-cespedes/) 
+    (https://github.com/tephyxp)
+
+- Alicia Ontiveros
+[🔗](https://www.linkedin.com/in/alicia-ontiveros-escudero/) 
+     (https://github.com/AliciaoE) 
+ 
+
+![Intro](../sakura-cards/public/img/Intro.png)
+![User Name](../sakura-cards/public/img/Username.png)
+![Cards](../sakura-cards/public/img/main.png)
+![Result](../sakura-cards/public/img/result.png)
+
+[FIGMA]:https://www.figma.com/proto/AEsHjeqBND7869PWn9t035/Sakura-Tarot?type=design&node-id=64-2043&t=DS5GyE1pY2wQK3Dq-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=38%3A777&show-proto-sidebar=1
+
+
+-----------------------------------------------------------------------
 ¡Bienvenido a nuestra fascinante página de tarot con la Baraja de Sakura! 🌟
 
 🧙 
@@ -49,6 +76,8 @@ Descubre los significados:
 
 Después de hacer tus elecciones, explora los significados de cada carta seleccionada. Nuestra página te proporcionará interpretaciones detalladas y perspicaces, basadas en la tradición del tarot y enriquecidas con la esencia única de la Baraja de Sakura.
 
+También podras revisar las tiradas anteriores gracias a la implementación del historial, mediante un json-server, y no solo eso podras editar o borrar este historial. 
+
 🛠️Tecnologías Utilizadas:
 Este proyecto se ha desarrollado utilizando las siguientes tecnologías:
 
@@ -64,9 +93,31 @@ Este proyecto se ha desarrollado utilizando las siguientes tecnologías:
 
 📘 Instrucciones de Ejecución
 
-Clona este repositorio en tu máquina local.
-Instala las dependencias con el comando npm install.
-Ejecuta la aplicación con npm run dev.
+Clona este repositorio en tu máquina local. (git clone)
+Instala las dependencias (npm install)
+Ejecuta la aplicación  (npm run dev y  npm run json-server).
 Abre tu navegador y visita http://localhost:3000.
 ¡Sumérgete en el mágico mundo del tarot con la Baraja de Sakura y descubre las respuestas que el universo tiene reservadas para ti! 🌈✨
+
+Melissa Casola
+[🔗](https://www.linkedin.com/in/melissa-casola/)
+     (https://github.com/melitacasola)
+
+
+Stephanie Céspedes
+[🔗](https://www.linkedin.com/in/stephanie-cespedes/) 
+    (https://github.com/tephyxp)
+
+- Alicia Ontiveros
+[🔗](https://www.linkedin.com/in/alicia-ontiveros-escudero/) 
+     (https://github.com/AliciaoE) 
+ 
+
+![Intro](../sakura-cards/public/img/Intro.png)
+![User Name](../sakura-cards/public/img/Username.png)
+![Cards](../sakura-cards/public/img/main.png)
+![Result](../sakura-cards/public/img/result.png)
+
+FIGMA:https://www.figma.com/proto/AEsHjeqBND7869PWn9t035/Sakura-Tarot?type=design&node-id=64-2043&t=DS5GyE1pY2wQK3Dq-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=38%3A777&show-proto-sidebar=1
+
 

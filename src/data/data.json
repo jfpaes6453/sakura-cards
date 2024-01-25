@@ -7,132 +7,16 @@
       "results": []
     },
     {
-      "id": "8704fc49-45b1-42d8-b467-012364f1ee79",
-      "date": "25/1/2024",
-      "username": "alicia",
-      "results": [
-        {
-          "id": "52",
-          "cardNumber": 52,
-          "spanishName": "Tierra",
-          "englishName": "The Earthy",
-          "kanji": "地",
-          "Rōmaji": "Chi",
-          "appeardManga": "24",
-          "appeardAnime": "45",
-          "clowCard": "https://i.ibb.co/cvJHXG4/Tierra.jpg",
-          "sakuraCard": "https://i.ibb.co/1nd4cL8/Tierra-Sakura.jpg",
-          "meaning": "Simboliza la solidez, la sujeción y la vida.",
-          "__v": 0,
-          "cardsReverse": {
-            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
-            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
-          }
-        },
-        {
-          "id": "4",
-          "cardNumber": 4,
-          "spanishName": "Agua",
-          "englishName": "The Watery",
-          "kanji": "水",
-          "Rōmaji": "Mizu",
-          "appeardManga": "3",
-          "appeardAnime": "3",
-          "clowCard": "https://i.ibb.co/KLrv3BF/Agua.jpg",
-          "sakuraCard": "https://i.ibb.co/HxLpWy5/Agua-Sakura.jpg",
-          "cardsReverse": {
-            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
-            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
-          },
-          "meaning": "Simboliza los sentimientos, la expansión, la habilidad de la adivinación.",
-          "__v": 0
-        },
-        {
-          "id": "38",
-          "cardNumber": 38,
-          "spanishName": "Flecha",
-          "englishName": "The Arrow",
-          "kanji": "矢",
-          "Rōmaji": "Ya",
-          "appeardManga": "",
-          "appeardAnime": "Movie n° 1",
-          "clowCard": "https://i.ibb.co/8x77Jxw/Flecha.jpg",
-          "sakuraCard": "https://i.ibb.co/BrtpnY6/Flecha-Sakura.jpg",
-          "meaning": " Esta carta simboliza la precisión, la certeza, un objetivo.",
-          "__v": 0,
-          "cardsReverse": {
-            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
-            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
-          }
-        }
-      ]
-    },
-    {
       "id": "aad63a67-f73f-4c87-a0a5-957bdca6c350",
       "date": "25/1/2024",
       "username": "Alicia",
       "results": []
     },
     {
-      "id": "ee86f5b1-a397-4bf5-b9c1-8718f8c11ed8",
+      "id": "97849e51-375b-4c8f-849f-2095d7b2aff8",
       "date": "25/1/2024",
-      "username": "Stephanie",
-      "results": [
-        {
-          "id": "42",
-          "cardNumber": 42,
-          "spanishName": "Atravesar",
-          "englishName": "The Through",
-          "kanji": "抜",
-          "Rōmaji": "Batsu",
-          "appeardManga": "",
-          "appeardAnime": "35/36",
-          "clowCard": "https://i.ibb.co/8jk5q45/Atravesar.jpg",
-          "sakuraCard": "https://i.ibb.co/KLPP4CK/Atravesar-Sakura.jpg",
-          "meaning": "Simboliza el camino, el cambio.",
-          "__v": 0,
-          "cardsReverse": {
-            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
-            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
-          }
-        },
-        {
-          "id": "46",
-          "cardNumber": 46,
-          "spanishName": "Nube",
-          "englishName": "The Cloud",
-          "kanji": "雲",
-          "Rōmaji": "Kumo",
-          "appeardManga": "",
-          "appeardAnime": "39",
-          "clowCard": "https://i.ibb.co/YydjPX0/Nube.jpg",
-          "sakuraCard": "https://i.ibb.co/wh7w3kG/Nube-Sakura.jpg",
-          "meaning": "Esta carta simboliza incertidumbre.",
-          "__v": 0,
-          "cardsReverse": {
-            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
-            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
-          }
-        },
-        {
-          "id": "20",
-          "cardNumber": 20,
-          "spanishName": "Brillo",
-          "englishName": "The Glow",
-          "kanji": "灯",
-          "Rōmaji": "Akari",
-          "appeardManga": "18",
-          "appeardAnime": "18",
-          "clowCard": "https://i.ibb.co/M7ynsLg/Brillo.jpg",
-          "sakuraCard": "https://i.ibb.co/2YDm0j7/Brillo-Sakura.jpg",
-          "cardsReverse": {
-            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
-            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
-          },
-          "meaning": "Esta carta simboliza la iluminación.",
-          "__v": 0
-        }
-      ]
+      "username": "Alex",
+      "results": []
     }
   ],
   "deleteAllUsers": []
