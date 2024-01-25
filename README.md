@@ -88,22 +88,23 @@ También podras revisar las tiradas anteriores gracias a la implementación del 
 🛠️Tecnologías Utilizadas:
 Este proyecto se ha desarrollado utilizando las siguientes tecnologías:
 
-*JavaScript: El núcleo de la lógica y la interactividad del tarot se ha implementado    utilizando JavaScript, permitiendo una experiencia fluida y dinámica para los usuarios.
+- JavaScript: El núcleo de la lógica y la interactividad del tarot se ha implementado    utilizando JavaScript, permitiendo una experiencia fluida y dinámica para los usuarios.
 
-*React: La interfaz de usuario ha sido construida con React, una biblioteca de JavaScript que facilita la creación de componentes reutilizables y la gestión eficiente del estado de la aplicación.
+- React: La interfaz de usuario ha sido construida con React, una biblioteca de JavaScript que facilita la creación de componentes reutilizables y la gestión eficiente del estado de la aplicación.
 
-*Next.js: Hemos utilizado Next.js para optimizar el rendimiento de la página mediante el rendimiento del lado del servidor y la generación estática. Esto garantiza una carga rápida y una experiencia de usuario mejorada.
+- Next.js: Hemos utilizado Next.js para optimizar el rendimiento de la página mediante el rendimiento del lado del servidor y la generación estática. Esto garantiza una carga rápida y una experiencia de usuario mejorada.
 
-*Jest: La construcción rápida y eficiente de la aplicación se ha logrado con Jest, una herramienta que facilita el desarrollo de aplicaciones web modernas.
+- Jest: La construcción rápida y eficiente de la aplicación se ha logrado con Jest, una herramienta que facilita el desarrollo de aplicaciones web modernas.
 
-*Cypress: Para asegurar la calidad y fiabilidad del código, hemos implementado pruebas con Cypress, una potente herramienta de pruebas end-to-end.
+- Cypress: Para asegurar la calidad y fiabilidad del código, hemos implementado pruebas con Cypress, una potente herramienta de pruebas end-to-end.
+
 
 📘 Instrucciones de Ejecución
 
-Clona este repositorio en tu máquina local. (git clone)
-Instala las dependencias (npm install)
-Ejecuta la aplicación  (npm run dev y  npm run json-server).
-Abre tu navegador y visita http://localhost:3000.
+- Clona este repositorio en tu máquina local. (git clone).
+- Instala las dependencias (npm install)
+- Ejecuta la aplicación  (npm run dev y  npm run json-server).
+- Abre tu navegador y visita http://localhost:3000.
 ¡Sumérgete en el mágico mundo del tarot con la Baraja de Sakura y descubre las respuestas que el universo tiene reservadas para ti! 🌈✨
 
 - Melissa Casola:
