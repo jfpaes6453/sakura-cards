@@ -1,6 +1,9 @@
 import DeleteHistory from "./DeleteHistory"
 import Table from "./Table"
 import Accordion from "./Accordion";
+import { useRouter } from "next/navigation";
+import ButtonsTable from "./ButtonsTable";
+import Link from 'next/link';
 
 export default function TableComponent({ users }) {
   return (
@@ -34,7 +37,17 @@ export default function TableComponent({ users }) {
     </div>
 
     </div>
+    <div className="flex justify-center">
+
         <DeleteHistory />
+
+        <Link href="/choose-card" >
+            <ButtonsTable text="Nueva Tirada" />
+          </Link>
+          
+          </div>
   </div>
+  
+  
   )
 }
