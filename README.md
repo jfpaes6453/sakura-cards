@@ -37,27 +37,32 @@ Run the application with
 Open your browser and visit http://localhost:3000.
 Immerse yourself in the magical world of tarot with the Sakura Deck and discover the answers that the universe has in store for you! 🌈✨
 
-Melissa Casola
-[Linkedin🔗](https://www.linkedin.com/in/melissa-casola/)
+- Melissa Casola:
+
+[Linkedin🔗](https://www.linkedin.com/in/melissa-casola/) -
 [ GITHUB🔗](https://github.com/melitacasola)
 
 
-Stephanie Céspedes
-[Linkedin 🔗](https://www.linkedin.com/in/stephanie-cespedes/) 
+- Stephanie Céspedes:
+
+[Linkedin 🔗](https://www.linkedin.com/in/stephanie-cespedes/) -
 [ GITHUB🔗](https://github.com/tephyxp)
 
 - Alicia Ontiveros
 
- [Linkedin🔗](https://www.linkedin.com/in/alicia-ontiveros-escudero/) 
+ [Linkedin🔗](https://www.linkedin.com/in/alicia-ontiveros-escudero/) -
  [ GITHUB🔗](https://github.com/AliciaoE) 
  
 
 ![Intro](public/img/Intro.png)
+
 ![User Name](public/img/Username.png)
+
 ![Cards](public/img/main.png)
+
 ![Result](public/img/result.png)
 
-FIGMA:https://www.figma.com/proto/AEsHjeqBND7869PWn9t035/Sakura-Tarot?type=design&node-id=64-2043&t=DS5GyE1pY2wQK3Dq-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=38%3A777&show-proto-sidebar=1
+[ FIGMA](https://www.figma.com/proto/AEsHjeqBND7869PWn9t035/Sakura-Tarot?type=design&node-id=64-2043&t=DS5GyE1pY2wQK3Dq-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=38%3A777&show-proto-sidebar=1)
 
 
 
@@ -101,26 +106,29 @@ Ejecuta la aplicación  (npm run dev y  npm run json-server).
 Abre tu navegador y visita http://localhost:3000.
 ¡Sumérgete en el mágico mundo del tarot con la Baraja de Sakura y descubre las respuestas que el universo tiene reservadas para ti! 🌈✨
 
-Melissa Casola
-[Linkedin🔗](https://www.linkedin.com/in/melissa-casola/)
+- Melissa Casola:
+
+[Linkedin🔗](https://www.linkedin.com/in/melissa-casola/) -
 [ GITHUB🔗](https://github.com/melitacasola)
 
 
-Stephanie Céspedes
-[Linkedin 🔗](https://www.linkedin.com/in/stephanie-cespedes/) 
+- Stephanie Céspedes:
+
+[Linkedin 🔗](https://www.linkedin.com/in/stephanie-cespedes/) -
 [ GITHUB🔗](https://github.com/tephyxp)
 
-- Alicia Ontiveros
+- Alicia Ontiveros:
 
- [Linkedin🔗](https://www.linkedin.com/in/alicia-ontiveros-escudero/) 
+ [Linkedin🔗](https://www.linkedin.com/in/alicia-ontiveros-escudero/) -
  [ GITHUB🔗](https://github.com/AliciaoE) 
  
 
 ![Intro](public/img/Intro.png)
+
 ![User Name](public/img/Username.png)
+
 ![Cards](public/img/main.png)
+
 ![Result](public/img/result.png)
 
-FIGMA:https://www.figma.com/proto/AEsHjeqBND7869PWn9t035/Sakura-Tarot?type=design&node-id=64-2043&t=DS5GyE1pY2wQK3Dq-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=38%3A777&show-proto-sidebar=1
-
-
+[ FIGMA](https://www.figma.com/proto/AEsHjeqBND7869PWn9t035/Sakura-Tarot?type=design&node-id=64-2043&t=DS5GyE1pY2wQK3Dq-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=38%3A777&show-proto-sidebar=1)
