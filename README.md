@@ -4,13 +4,13 @@ Welcome to our enchanting Sakura Tarot page! 🌟
 
 - 🖥️ How it Works: 
 
-Select Your Cards:
+  Select Your Cards:
 
-🌌 Choose a card to represent your past.
+   🌌 Choose a card to represent your past.
 
-🌟 Select another card to symbolize your present.
+   🌟 Select another card to symbolize your present.
 
-🌈 Choose a third card to glimpse into your future.
+   🌈 Choose a third card to glimpse into your future.
 
 
 Discover the Meanings:
@@ -21,15 +21,16 @@ You will also be able to review previous runs thanks to the implementation of th
 
 🛠️ Technologies Used: This project has been developed using the following technologies:
 
-JavaScript: The core logic and interactivity of the tarot have been implemented using JavaScript, enabling a smooth and dynamic experience for users.
+- JavaScript: The core logic and interactivity of the tarot have been implemented using JavaScript, enabling a smooth and dynamic experience for users.
 
-React: The user interface has been built with React, a JavaScript library that facilitates the creation of reusable components and efficient state management.
+- React: The user interface has been built with React, a JavaScript library that facilitates the creation of reusable components and efficient state management.
 
-Next.js: We have used Next.js to optimize page performance through server-side rendering and static generation. This ensures fast loading and an enhanced user experience.
+- Next.js: We have used Next.js to optimize page performance through server-side rendering and static generation. This ensures fast loading and an enhanced user experience.
 
-Jest: The rapid and efficient building of the application has been achieved with Jest, a tool that facilitates the development of modern web applications.
+- Jest: The rapid and efficient building of the application has been achieved with Jest, a tool that facilitates the development of modern web applications.
 
-Cypress: To ensure code quality and reliability, we have implemented tests with Cypress, a powerful end-to-end testing tool.
+- Cypress: To ensure code quality and reliability, we have implemented tests with Cypress, a powerful end-to-end testing tool.
+
 
 📘 Execution Instructions:
 
@@ -85,11 +86,11 @@ Esta página ofrece una experiencia única de lectura de tarot, permitiéndote e
 - 🖥️ Cómo funciona
 Selecciona tus cartas:
 
-🌌 Elige una carta para representar tu pasado.
+  🌌 Elige una carta para representar tu pasado.
 
-🌟 Selecciona otra carta para simbolizar tu presente.
+  🌟 Selecciona otra carta para simbolizar tu presente.
 
-🌈 Elige una tercera carta para vislumbrar tu futuro.
+  🌈 Elige una tercera carta para vislumbrar tu futuro.
 
 Descubre los significados:
 
