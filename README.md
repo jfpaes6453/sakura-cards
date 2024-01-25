@@ -113,7 +113,7 @@ Stephanie Céspedes
      (https://github.com/AliciaoE) 
  
 
-![Intro](../sakura-cards/public/img/Intro.png)
+![Intro](public/img/Intro.png)
 ![User Name](../sakura-cards/public/img/Username.png)
 ![Cards](../sakura-cards/public/img/main.png)
 ![Result](../sakura-cards/public/img/result.png)
