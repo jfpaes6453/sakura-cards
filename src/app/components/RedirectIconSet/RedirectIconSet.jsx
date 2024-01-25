@@ -13,7 +13,7 @@ const RedirectIconSet = () => {
     
     
     return (
-        <section className="flex items-center gap-8 text-4xl">           
+        <section data-testid="redirect-icons" className="flex items-center gap-8 text-4xl">           
             <Link href="/">
                 <FaHome className="h-[53px] w-[53px] opacity-75"/>
             </Link>
