@@ -45,7 +45,7 @@ Created by
 [ GITHUB🔗](https://github.com/melitacasola)
 
 
--👩 Stephanie Céspedes:
+- 👩 Stephanie Céspedes:
 
 [Linkedin 🔗](https://www.linkedin.com/in/stephanie-cespedes/) -
 [ GITHUB🔗](https://github.com/tephyxp)
@@ -56,6 +56,9 @@ Created by
  [ GITHUB🔗](https://github.com/AliciaoE) 
  
 
+
+
+
 ![Intro](public/img/Intro.png)
 
 ![User Name](public/img/Username.png)
@@ -64,21 +67,23 @@ Created by
 
 ![Result](public/img/result.png)
 
-[ FIGMA](https://www.figma.com/proto/AEsHjeqBND7869PWn9t035/Sakura-Tarot?type=design&node-id=64-2043&t=DS5GyE1pY2wQK3Dq-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=38%3A777&show-proto-sidebar=1)
+[ FIGMA 🔗](https://www.figma.com/proto/AEsHjeqBND7869PWn9t035/Sakura-Tarot?type=design&node-id=64-2043&t=DS5GyE1pY2wQK3Dq-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=38%3A777&show-proto-sidebar=1)
 
 
 
 -----------------------------------------------------------------------
 ¡Bienvenido a nuestra fascinante página de tarot con la Baraja de Sakura! 🌟
 
-🧙 
+- 🧙 
 Esta página ofrece una experiencia única de lectura de tarot, permitiéndote explorar los misterios del pasado, presente y futuro a través de las cartas de la Baraja de Sakura. La combinación de la antigua sabiduría del tarot con la estética cautivadora de Sakura crea un entorno mágico para tu búsqueda de respuestas y autoconocimiento.
 
-🖥️ Cómo funciona
+- 🖥️ Cómo funciona
 Selecciona tus cartas:
 
 🌌 Elige una carta para representar tu pasado.
+
 🌟 Selecciona otra carta para simbolizar tu presente.
+
 🌈 Elige una tercera carta para vislumbrar tu futuro.
 
 Descubre los significados:
@@ -136,4 +141,4 @@ Este proyecto se ha desarrollado utilizando las siguientes tecnologías:
 
 ![Result](public/img/result.png)
 
-[ FIGMA](https://www.figma.com/proto/AEsHjeqBND7869PWn9t035/Sakura-Tarot?type=design&node-id=64-2043&t=DS5GyE1pY2wQK3Dq-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=38%3A777&show-proto-sidebar=1)
+[ FIGMA 🔗](https://www.figma.com/proto/AEsHjeqBND7869PWn9t035/Sakura-Tarot?type=design&node-id=64-2043&t=DS5GyE1pY2wQK3Dq-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=38%3A777&show-proto-sidebar=1)
