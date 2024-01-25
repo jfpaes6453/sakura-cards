@@ -37,18 +37,20 @@ Run the application with
 Open your browser and visit http://localhost:3000.
 Immerse yourself in the magical world of tarot with the Sakura Deck and discover the answers that the universe has in store for you! 🌈✨
 
-- Melissa Casola:
+Created by
+
+- 👩 Melissa Casola:
 
 [Linkedin🔗](https://www.linkedin.com/in/melissa-casola/) -
 [ GITHUB🔗](https://github.com/melitacasola)
 
 
-- Stephanie Céspedes:
+-👩 Stephanie Céspedes:
 
 [Linkedin 🔗](https://www.linkedin.com/in/stephanie-cespedes/) -
 [ GITHUB🔗](https://github.com/tephyxp)
 
-- Alicia Ontiveros
+- 👩 Alicia Ontiveros
 
  [Linkedin🔗](https://www.linkedin.com/in/alicia-ontiveros-escudero/) -
  [ GITHUB🔗](https://github.com/AliciaoE) 
@@ -107,18 +109,20 @@ Este proyecto se ha desarrollado utilizando las siguientes tecnologías:
 - Abre tu navegador y visita http://localhost:3000.
 ¡Sumérgete en el mágico mundo del tarot con la Baraja de Sakura y descubre las respuestas que el universo tiene reservadas para ti! 🌈✨
 
-- Melissa Casola:
+ Desarrollado por :
+
+- 👩 Melissa Casola:
 
 [Linkedin🔗](https://www.linkedin.com/in/melissa-casola/) -
 [ GITHUB🔗](https://github.com/melitacasola)
 
 
-- Stephanie Céspedes:
+- 👩 Stephanie Céspedes:
 
 [Linkedin 🔗](https://www.linkedin.com/in/stephanie-cespedes/) -
 [ GITHUB🔗](https://github.com/tephyxp)
 
-- Alicia Ontiveros:
+- 👩 Alicia Ontiveros:
 
  [Linkedin🔗](https://www.linkedin.com/in/alicia-ontiveros-escudero/) -
  [ GITHUB🔗](https://github.com/AliciaoE) 
