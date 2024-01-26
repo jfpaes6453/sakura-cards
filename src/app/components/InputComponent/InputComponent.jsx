@@ -36,6 +36,7 @@ const InputComponent = () =>{
       <p className='text-[29px]'>Tu Nombre</p>
       <form onSubmit={handleNewUser}>
         <input
+          id='nameId'
           type="text"
           placeholder='Escribe tu nombre'
           value={newUser}
@@ -48,7 +49,7 @@ const InputComponent = () =>{
         />
         <div className='my-10 mb-24 flex flex-col items-center '>
 
-          <ButtonComponent text="Empezar Tirada" className='w-[300px] h-[60px] items-center bg-zinc-300 bg-opacity-0 rounded-[20px] border border-orange-100 p-12'/>
+          <ButtonComponent text="Empezar Tirada" id="idSubmit" className='w-[300px] h-[60px] items-center bg-zinc-300 bg-opacity-0 rounded-[20px] border border-orange-100 p-12'/>
         </div>
       </form>
 

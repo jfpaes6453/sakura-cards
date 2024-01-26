@@ -1,3 +1,16 @@
 {
-  "users": []
+  "users": [
+    {
+      "id": "03d703e6-22e0-4f62-b5a8-362b2fc89f1f",
+      "date": "26/1/2024",
+      "username": "FemCoder",
+      "results": []
+    },
+    {
+      "id": "769ad5d3-4639-418a-b793-a1482f057214",
+      "date": "26/1/2024",
+      "username": "FemCoder",
+      "results": []
+    }
+  ]
 }
