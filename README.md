@@ -27,7 +27,7 @@ You will also be able to review previous runs thanks to the implementation of th
 
 - TailwindCSS : version 3.3.0
 
-- Next.js: We have used Next.js to optimize page performance through server-side rendering and static generation. This ensures fast loading and an enhanced user experience.
+- Next.js: We have used Next.js to optimize page performance through server-side rendering and static generation. This ensures fast loading and an enhanced user experience. Version 14.0.2
 
 - Jest: The rapid and efficient building of the application has been achieved with Jest, a tool that facilitates the development of modern web applications. Version 9.7.0
 
