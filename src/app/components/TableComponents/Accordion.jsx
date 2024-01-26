@@ -47,19 +47,19 @@ export default function Accordion({ user }) {
     const handleSummaryClick = () => setIsAccordionOpen(!isAccordionOpen);
 
     return (
-        <div key={id} className='md:hidden sm:w-full'>
+        <div key={id} className='md:hidden relative z-20 sm:w-full'>
             <details
                 className="m-0 border-2xl p-5"
                 open={isAccordionOpen}
             >
                 <summary 
-                className="cursor-pointer flex items-center gap-3" onClick={handleSummaryClick}
+                className="cursor-pointer flex items-center z-20 gap-3" onClick={handleSummaryClick}
                 style={{ listStyle: 'none' }} 
                 >
-                    {isAccordionOpen ? <FaChevronCircleDown className="ml-2" /> : <FaChevronCircleUp className="ml-2" />}
+                    {isAccordionOpen ? <FaChevronCircleDown className="ml-2 z-20" /> : <FaChevronCircleUp className="ml-2 z-20" />}
                     <span>NOMBRE: {username}</span>
                 </summary>
-                <div className='pl-6'>
+                <div className='z-20 pl-6'>
                     {isModifying && (
                         <div>
                             <label htmlFor={`newUsername-${id}`}>Nuevo Nombre:</label>
@@ -68,11 +68,13 @@ export default function Accordion({ user }) {
                                 id={`newUsername-${id}`}
                                 value={newUsername}
                                 onChange={(e) => setNewUsername(e.target.value)}
+                                placeholder='cambiar nombre...'
+                                className='bg-bg-color z-20'
                             />
                         </div>
                     )}
-                    <p className="text-start p-3">FECHA: {date}</p>
-                    <p className="text-start sm:w-11/12 py-3">RESULTADO LECTURA:
+                    <p className="z-20 text-start p-3">FECHA: {date}</p>
+                    <p className="z-20 text-start sm:w-11/12 py-3">RESULTADO LECTURA:
                         {Array.isArray(results) ? (
                             results.map((result) => (
                                 <div key={result.id}>
@@ -83,25 +85,25 @@ export default function Accordion({ user }) {
                             <p>No hay resultados</p>
                         )}
                     </p>
-                    <p className='pl-3'>ACCIONES: </p>
-                    <section className="flex justify-center gap-3 items-center p-3">
+                    <p className='pl-3 z-20'>ACCIONES: </p>
+                    <section className="flex justify-center gap-3 items-center p-3 relative z-20">
                         {isModifying ? (
                             <div>
-                                <button className="h-8" onClick={handleSaveUsername}>
-                                    <FaRegSave className="h-7 w-7" />
+                                <button className="h-8 z-20" onClick={handleSaveUsername}>
+                                    <FaRegSave className="h-7 w-7 z-20" />
                                 </button>
                                 <button onClick={handleCancelEdit}>
-                                    <MdOutlineCancel className="h-7 w-7" />
+                                    <MdOutlineCancel className="h-7 z-20 w-7" />
                                 </button>
                             </div>
                         ) : (
                             <button className="mr-3" onClick={handleUpdateUsername}>
-                                <FiEdit className="h-7 w-7" />
+                                <FiEdit className="h-7 w-7 z-20" />
                             </button>
                         )}
                         {!isModifying && (
                             <button onClick={handleDelete}>
-                                <RiDeleteBinLine className="h-7 w-7" />
+                                <RiDeleteBinLine className="h-7 w-7 z-20" />
                             </button>
                         )}
                     </section>

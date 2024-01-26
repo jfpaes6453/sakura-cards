@@ -9,7 +9,7 @@
     "lint": "next lint",
     "test": "jest",
     "json-server": "json-server --watch src/data/data.json --port 8000",
-    "e2e": "cypress open"
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.1",
