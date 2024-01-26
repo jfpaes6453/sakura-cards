@@ -115,11 +115,11 @@ Este proyecto se ha desarrollado utilizando las siguientes tecnologías:
 
 - React JS: La interfaz de usuario ha sido construida con React, una biblioteca de JavaScript que facilita la creación de componentes reutilizables y la gestión eficiente del estado de la aplicación.
 
-- Next.js: Hemos utilizado Next.js para optimizar el rendimiento de la página mediante el rendimiento del lado del servidor y la generación estática. Esto garantiza una carga rápida y una experiencia de usuario mejorada.
+- Next.js: Hemos utilizado Next.js para optimizar el rendimiento de la página mediante el rendimiento del lado del servidor y la generación estática. Esto garantiza una carga rápida y una experiencia de usuario mejorada. Versión 14.0.2
 
-- Jest: La construcción rápida y eficiente de la aplicación se ha logrado con Jest, una herramienta que facilita el desarrollo de aplicaciones web modernas.
+- Jest: La construcción rápida y eficiente de la aplicación se ha logrado con Jest, una herramienta que facilita el desarrollo de aplicaciones web modernas. Versión 9.7.0
 
-- Cypress: Para asegurar la calidad y fiabilidad del código, hemos implementado pruebas con Cypress, una potente herramienta de pruebas end-to-end.
+- Cypress: Para asegurar la calidad y fiabilidad del código, hemos implementado pruebas con Cypress, una potente herramienta de pruebas end-to-end. Versión 13.6.3
 
 - Node Js version 20.0.0 superior
 
