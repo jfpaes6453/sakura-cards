@@ -37,11 +37,13 @@ You will also be able to review previous runs thanks to the implementation of th
 Clone this repository to your local machine.
 Install dependencies with the command npm install.
 Run the application with 
-- npm install
-- npm run json-server 
-- npm run dev.
+- ```npm install```
+- ```npm run json-server ```
+- ```npm run dev```.
 Open your browser and visit http://localhost:3000.
 Immerse yourself in the magical world of tarot with the Sakura Deck and discover the answers that the universe has in store for you! 🌈✨
+
+[ FIGMA 🔗](https://www.figma.com/proto/AEsHjeqBND7869PWn9t035/Sakura-Tarot?type=design&node-id=64-2043&t=DS5GyE1pY2wQK3Dq-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=38%3A777&show-proto-sidebar=1)
 
 Created by
 
@@ -73,7 +75,6 @@ Created by
 
 ![Result](public/img/result.png)
 
-[ FIGMA 🔗](https://www.figma.com/proto/AEsHjeqBND7869PWn9t035/Sakura-Tarot?type=design&node-id=64-2043&t=DS5GyE1pY2wQK3Dq-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=38%3A777&show-proto-sidebar=1)
 
 
 
@@ -115,10 +116,13 @@ Este proyecto se ha desarrollado utilizando las siguientes tecnologías:
 📘 Instrucciones de Ejecución
 
 - Clona este repositorio en tu máquina local. (git clone).
-- Instala las dependencias (npm install)
-- Ejecuta la aplicación  (npm run dev y  npm run json-server).
+- Instala las dependencias ( ```npm install``` )
+- Ejecuta la aplicación  (```npm run dev``` y  ```npm run json-server```).
 - Abre tu navegador y visita http://localhost:3000.
 ¡Sumérgete en el mágico mundo del tarot con la Baraja de Sakura y descubre las respuestas que el universo tiene reservadas para ti! 🌈✨
+
+[ FIGMA 🔗](https://www.figma.com/proto/AEsHjeqBND7869PWn9t035/Sakura-Tarot?type=design&node-id=64-2043&t=DS5GyE1pY2wQK3Dq-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=38%3A777&show-proto-sidebar=1)
+
 
  Desarrollado por :
 
@@ -147,4 +151,3 @@ Este proyecto se ha desarrollado utilizando las siguientes tecnologías:
 
 ![Result](public/img/result.png)
 
-[ FIGMA 🔗](https://www.figma.com/proto/AEsHjeqBND7869PWn9t035/Sakura-Tarot?type=design&node-id=64-2043&t=DS5GyE1pY2wQK3Dq-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=38%3A777&show-proto-sidebar=1)
