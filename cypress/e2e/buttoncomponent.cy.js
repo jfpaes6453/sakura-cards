@@ -18,7 +18,6 @@ describe('ButtonComponent', () => {
         cy.get('#nameId').type('FemCoder', { force: true })
         const buttonSubmit = 'Empezar Tirada';
         cy.wait(1000)
-        // cy.get('#idSubmit').submit()
         cy.contains(buttonSubmit).click();
         const url = 'http://localhost:3000/choose-card';
         cy.url().should('eq', url);
