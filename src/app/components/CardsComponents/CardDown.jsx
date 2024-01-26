@@ -15,7 +15,6 @@ export default function CardDown() {
   const [subtitleCard, setSubtitleCard] = useState('para el pasado');
   const [cardPositions, setCardPositions] = useState({});
   const [areCardsVisible, setAreCardsVisible] = useState(true);
-  // const [userSelection, setUserSelection] = useState([]);
 
   const router = useRouter()
 
@@ -26,8 +25,6 @@ export default function CardDown() {
       setCards(shuffledCards);
     }
   }, [data]);
-
-
 
   const calculateSelectedCardPosition = (index) => {
     const verticalGap = 300;
@@ -53,7 +50,6 @@ export default function CardDown() {
       setSelectedCards(newSelectedCards)
 
       localStorage.setItem('userSelection', JSON.stringify(newSelectedCards))
-      console.log(newSelectedCards);
 
       const newCardPositions = newSelectedCards.reduce((positions, cardId, index) => {
         const position = calculateSelectedCardPosition(index);
@@ -74,7 +70,6 @@ export default function CardDown() {
 
 
     if (selectedCards.length === 3) {
-      // const queryParams = selectedCards.map((card, index) => `carta${index + 1}=${card}`).join('&');
       router.push(`/reading`);
       setAreCardsVisible(false);
     }
@@ -114,7 +109,7 @@ export default function CardDown() {
 
   return (
     <div className="flex justify-center items-center  relative md:w-full h-full">
-      <section className="relative h-[1100px] w-screen">
+      <section className="relative h-[1000px] w-screen">
         <h3 className="text-center md:text-5xl text-4xl">{subtitleCard}</h3>
         {filteredData.map((card, index) => {
           const isSelected = selectedCards.includes(card.id);

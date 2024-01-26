@@ -4,9 +4,9 @@ const baseUrl = "http://localhost:8000/users"
 axios.defaults.headers.post['Content-Type'] = 'application/json'
 axios.defaults.headers.post['Accept'] = 'application/json'
 
-export const getAllData = () => {
+export const getAllData =  () => {
     try {
-        const request = axios.get(baseUrl)
+        const request =  axios.get(baseUrl)
         return request.then(response => response.data)
     } catch (error) {
         console.error('error: ', error)

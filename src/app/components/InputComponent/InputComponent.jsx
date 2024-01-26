@@ -6,27 +6,6 @@ import { createUser } from '@/utils/apiAxios';
 
 import ButtonComponent from '../ButtonComponent/ButtonComponent';
 
-// const InputComponent = ({ label, placeholder, onChange }) => {
-//   return (
-//     <div className="form-group">
-//       <label className="font-text block ">{label}</label>
-//       <input
-//         type="text"
-//         placeholder={placeholder}
-//         className="mt-1 w-full border rounded-md bg-transparent text-white border-ffe4ce p-5"
-//         style={{ width: '27.75rem' }}
-//         onChange={onChange}
-//       />
-//     </div>
-//   );
-// };
-
-//   InputComponent.propTypes = {
-//   label: PropTypes.string.isRequired,
-//   placeholder: PropTypes.string,
-//   onChange: PropTypes.func,
-// };
-
 
 const InputComponent = () =>{
   const router = useRouter();
@@ -46,10 +25,8 @@ const InputComponent = () =>{
     });
 
     setNewUser('')
-    //guardo mi ID en localStorage, pa usarlo en cardResults
+    
     localStorage.setItem('userId', userId)
-    //y reinicio el localStorage, con las cartas que quedaron de antes
-    //c/v qe el user cargue su nombre el local de cartas estara vacio
     localStorage.removeItem('selectedRandomCards')
     router.push('/choose-card')
   }
