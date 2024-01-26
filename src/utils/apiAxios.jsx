@@ -57,20 +57,15 @@ export const updateUserResults = async (userId, newResults) => {
 
 
 export async function deleteAllHistory() {
-    //como delete tiene "seguridad" -> necesita ID pa eliminar, hacemos un map qe recorra todos los ids
     try {
         const response = await axios.get(baseUrl);
 
-        // creamos variable qe tenga cada id de los users del data.response - pa la url
         const userIds = response.data.map(user => user.id);
 
-        //delete de cada ID de la constante userIdes
         const deletePromises = userIds.map(userId => axios.delete(`${baseUrl}/${userId}`));
 
-        // await que termine de borrar la laaarga lista
         await Promise.all(deletePromises);
 
-        console.log('All items deleted successfully.');
     } catch (error) {
         console.error('Error deleting items:', error.message);
     }

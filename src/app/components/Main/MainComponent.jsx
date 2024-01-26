@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ButtonComponent from "../ButtonComponent/ButtonComponent";
+import Image from "next/image";
 
 export default function MainComponent() {
   return (
@@ -20,9 +21,11 @@ export default function MainComponent() {
           </div>
         </nav>
         <section className="grid grid-flow-col auto-cols-max ml-10 gap-20">
-          <img
+          <Image
             src="/img/pngwing - copia.png"
-            className="w-13.188 h-140 mb-20 mt-10"
+            width={527}
+            height={642}
+            className="mb-20 mt-10"
             alt="Tarot"
           />
           <section className="gap-5 mt-5">
@@ -54,7 +57,9 @@ export default function MainComponent() {
           Sakura tarot
         </h1>
         <h2 className="text-[3rem] text-font-color mt-2 "> Instrucciones</h2>
-        <img src="/img/pngwing - copia.png"  alt="Tarot"
+        <Image src="/img/pngwing - copia.png" 
+        width={215}
+        height={323} alt="Tarot"
           className="w-3/4 md:w-full h-auto mx-auto mb-10 mt-10"
         />
         <p className=" text-font-color mb-4 text-[1.5rem] text-center p-9" >
