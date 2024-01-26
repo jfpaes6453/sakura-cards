@@ -1,6 +1,7 @@
 import DeleteHistory from "./DeleteHistory"
 import Table from "./Table"
 import Accordion from "./Accordion";
+import { useRouter } from "next/navigation";
 import ButtonsTable from "./ButtonsTable";
 import Link from 'next/link';
 
