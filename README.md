@@ -58,15 +58,16 @@ Created by
 [Linkedin 🔗](https://www.linkedin.com/in/stephanie-cespedes/) -
 [ GITHUB🔗](https://github.com/tephyxp)
 
+- 👩 Aleksandra Vertiankina:
+
+[Linkedin 🔗](https://www.linkedin.com/in/alekve/) -
+[ GITHUB🔗](https://github.com/kametazin)
+
 - 👩 Alicia Ontiveros
 
  [Linkedin🔗](https://www.linkedin.com/in/alicia-ontiveros-escudero/) -
  [ GITHUB🔗](https://github.com/AliciaoE) 
  
-
-
-
-
 ![Intro](public/img/Intro.png)
 
 ![User Name](public/img/Username.png)
@@ -136,6 +137,11 @@ Este proyecto se ha desarrollado utilizando las siguientes tecnologías:
 
 [Linkedin 🔗](https://www.linkedin.com/in/stephanie-cespedes/) -
 [ GITHUB🔗](https://github.com/tephyxp)
+
+- 👩 Aleksandra Vertiankina:
+
+[Linkedin 🔗](https://www.linkedin.com/in/alekve/) -
+[ GITHUB🔗](https://github.com/kametazin)
 
 - 👩 Alicia Ontiveros:
 
