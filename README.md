@@ -23,13 +23,21 @@ You will also be able to review previous runs thanks to the implementation of th
 
 - JavaScript: The core logic and interactivity of the tarot have been implemented using JavaScript, enabling a smooth and dynamic experience for users.
 
-- React: The user interface has been built with React, a JavaScript library that facilitates the creation of reusable components and efficient state management.
+- React Js: The user interface has been built with React, a JavaScript library that facilitates the creation of reusable components and efficient state management.
 
-- Next.js: We have used Next.js to optimize page performance through server-side rendering and static generation. This ensures fast loading and an enhanced user experience.
+- TailwindCSS : version 3.3.0
 
-- Jest: The rapid and efficient building of the application has been achieved with Jest, a tool that facilitates the development of modern web applications.
+- Next.js: We have used Next.js to optimize page performance through server-side rendering and static generation. This ensures fast loading and an enhanced user experience. Version 14.0.2
 
-- Cypress: To ensure code quality and reliability, we have implemented tests with Cypress, a powerful end-to-end testing tool.
+- Jest: The rapid and efficient building of the application has been achieved with Jest, a tool that facilitates the development of modern web applications. Version 9.7.0
+
+- Cypress: To ensure code quality and reliability, we have implemented tests with Cypress, a powerful end-to-end testing tool. version 13.6.3
+
+- Node Js version 20.0.0 superior
+
+- Postman
+
+- VSC
 
 
 📘 Execution Instructions:
@@ -58,15 +66,16 @@ Created by
 [Linkedin 🔗](https://www.linkedin.com/in/stephanie-cespedes/) -
 [ GITHUB🔗](https://github.com/tephyxp)
 
+- 👩 Aleksandra Vertiankina:
+
+[Linkedin 🔗](https://www.linkedin.com/in/alekve/) -
+[ GITHUB🔗](https://github.com/kametazin)
+
 - 👩 Alicia Ontiveros
 
  [Linkedin🔗](https://www.linkedin.com/in/alicia-ontiveros-escudero/) -
  [ GITHUB🔗](https://github.com/AliciaoE) 
  
-
-
-
-
 ![Intro](public/img/Intro.png)
 
 ![User Name](public/img/Username.png)
@@ -104,13 +113,19 @@ Este proyecto se ha desarrollado utilizando las siguientes tecnologías:
 
 - JavaScript: El núcleo de la lógica y la interactividad del tarot se ha implementado    utilizando JavaScript, permitiendo una experiencia fluida y dinámica para los usuarios.
 
-- React: La interfaz de usuario ha sido construida con React, una biblioteca de JavaScript que facilita la creación de componentes reutilizables y la gestión eficiente del estado de la aplicación.
+- React JS: La interfaz de usuario ha sido construida con React, una biblioteca de JavaScript que facilita la creación de componentes reutilizables y la gestión eficiente del estado de la aplicación.
 
-- Next.js: Hemos utilizado Next.js para optimizar el rendimiento de la página mediante el rendimiento del lado del servidor y la generación estática. Esto garantiza una carga rápida y una experiencia de usuario mejorada.
+- Next.js: Hemos utilizado Next.js para optimizar el rendimiento de la página mediante el rendimiento del lado del servidor y la generación estática. Esto garantiza una carga rápida y una experiencia de usuario mejorada. Versión 14.0.2
 
-- Jest: La construcción rápida y eficiente de la aplicación se ha logrado con Jest, una herramienta que facilita el desarrollo de aplicaciones web modernas.
+- Jest: La construcción rápida y eficiente de la aplicación se ha logrado con Jest, una herramienta que facilita el desarrollo de aplicaciones web modernas. Versión 9.7.0
 
-- Cypress: Para asegurar la calidad y fiabilidad del código, hemos implementado pruebas con Cypress, una potente herramienta de pruebas end-to-end.
+- Cypress: Para asegurar la calidad y fiabilidad del código, hemos implementado pruebas con Cypress, una potente herramienta de pruebas end-to-end. Versión 13.6.3
+
+- Node Js version 20.0.0 superior
+
+- Postman
+
+- VSC
 
 
 📘 Instrucciones de Ejecución
@@ -136,6 +151,11 @@ Este proyecto se ha desarrollado utilizando las siguientes tecnologías:
 
 [Linkedin 🔗](https://www.linkedin.com/in/stephanie-cespedes/) -
 [ GITHUB🔗](https://github.com/tephyxp)
+
+- 👩 Aleksandra Vertiankina:
+
+[Linkedin 🔗](https://www.linkedin.com/in/alekve/) -
+[ GITHUB🔗](https://github.com/kametazin)
 
 - 👩 Alicia Ontiveros:
 
