@@ -1,16 +1,187 @@
 {
   "users": [
     {
-      "id": "03d703e6-22e0-4f62-b5a8-362b2fc89f1f",
+      "id": "8a0e7553-beea-4077-8078-2153d6a460ec",
       "date": "26/1/2024",
-      "username": "FemCoder",
-      "results": []
+      "username": "ALEX",
+      "results": [
+        {
+          "id": "35",
+          "cardNumber": 35,
+          "spanishName": "Cambio",
+          "englishName": "The Change",
+          "kanji": "替",
+          "Rōmaji": "Kawa",
+          "appeardManga": "",
+          "appeardAnime": "32",
+          "clowCard": "https://i.ibb.co/xmxSHrT/Cambio.jpg",
+          "sakuraCard": "https://i.ibb.co/wMRvj2L/Cambio-Sakura.jpg",
+          "meaning": "Esta carta simboliza cambio, apariencia, adaptación.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          }
+        },
+        {
+          "id": "24",
+          "cardNumber": 24,
+          "spanishName": "Dormir",
+          "englishName": "The Sleep",
+          "kanji": "眠",
+          "Rōmaji": "Nemuri",
+          "appeardManga": "",
+          "appeardAnime": "22",
+          "clowCard": "https://i.ibb.co/pwNB8mJ/Dormir.jpg",
+          "sakuraCard": "https://i.ibb.co/rGgQfZp/Dormir-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza la paralización, el despiste, el descanso.",
+          "__v": 0
+        },
+        {
+          "id": "51",
+          "cardNumber": 51,
+          "spanishName": "Gemelos",
+          "englishName": "The Twin",
+          "kanji": "双",
+          "Rōmaji": "Sō",
+          "appeardManga": "",
+          "appeardAnime": "43",
+          "clowCard": "https://i.ibb.co/NVc0wX3/Gemelos.jpg",
+          "sakuraCard": "https://i.ibb.co/MBSwTL4/Gemelos-Sakura.jpg",
+          "meaning": " Simbolizan la dualidad, la compañía, la multiplicación.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          }
+        }
+      ]
     },
     {
-      "id": "769ad5d3-4639-418a-b793-a1482f057214",
+      "id": "70e07c1d-91ff-4b24-b34e-b553fc049ef6",
       "date": "26/1/2024",
-      "username": "FemCoder",
-      "results": []
+      "username": "chulis",
+      "results": [
+        {
+          "id": "17",
+          "cardNumber": 17,
+          "spanishName": "Tormenta",
+          "englishName": "The Storm",
+          "kanji": "嵐",
+          "Rōmaji": "Arashi",
+          "appeardManga": "",
+          "appeardAnime": "15",
+          "clowCard": "https://i.ibb.co/qW0ZdhR/Tormenta.jpg",
+          "sakuraCard": "https://i.ibb.co/CKKCGQj/Tormenta-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza el caos, los problemas.",
+          "__v": 0
+        },
+        {
+          "id": "4",
+          "cardNumber": 4,
+          "spanishName": "Agua",
+          "englishName": "The Watery",
+          "kanji": "水",
+          "Rōmaji": "Mizu",
+          "appeardManga": "3",
+          "appeardAnime": "3",
+          "clowCard": "https://i.ibb.co/KLrv3BF/Agua.jpg",
+          "sakuraCard": "https://i.ibb.co/HxLpWy5/Agua-Sakura.jpg",
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          },
+          "meaning": "Simboliza los sentimientos, la expansión, la habilidad de la adivinación.",
+          "__v": 0
+        },
+        {
+          "id": "49",
+          "cardNumber": 49,
+          "spanishName": "Oscuridad",
+          "englishName": "The Dark",
+          "kanji": "闇",
+          "Rōmaji": "Yami",
+          "appeardManga": "21",
+          "appeardAnime": "42",
+          "clowCard": "https://i.ibb.co/wWcWD0n/Oscuridad.jpg",
+          "sakuraCard": "https://i.ibb.co/QXgNZxr/Oscuridad-Sakura.jpg",
+          "meaning": "Simboliza lo oculto, lo que aún está por descubrir, la ventaja.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "40ba039b-fc95-4734-ac37-d5e16f25f81f",
+      "date": "26/1/2024",
+      "username": "Alexandra Galarza",
+      "results": [
+        {
+          "id": "40",
+          "cardNumber": 40,
+          "spanishName": "Ola",
+          "englishName": "The Wave",
+          "kanji": "波",
+          "Rōmaji": "Nami",
+          "appeardManga": "",
+          "appeardAnime": "35/36",
+          "clowCard": "https://i.ibb.co/9rt8KyL/Ola.jpg",
+          "sakuraCard": "https://i.ibb.co/KzL7xPt/Ola-Sakura.jpg",
+          "meaning": " Simboliza la adaptación, la comunicación, la expansión.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          }
+        },
+        {
+          "id": "50",
+          "cardNumber": 50,
+          "spanishName": "Luz",
+          "englishName": "The Light",
+          "kanji": "光",
+          "Rōmaji": "Hikari",
+          "appeardManga": "21",
+          "appeardAnime": "42",
+          "clowCard": "https://i.ibb.co/CvvsjCJ/Luz.jpg",
+          "sakuraCard": "https://i.ibb.co/fp4CYWd/Luz-Sakura.jpg",
+          "meaning": "Simboliza la claridad, la revelación, un futuro brillante.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          }
+        },
+        {
+          "id": "33",
+          "cardNumber": 33,
+          "spanishName": "Grande",
+          "englishName": "The Big",
+          "kanji": "大",
+          "Rōmaji": "Dai",
+          "appeardManga": "",
+          "appeardAnime": "31",
+          "clowCard": "https://i.ibb.co/gz8Qmfb/Grande.jpg",
+          "sakuraCard": "https://i.ibb.co/J2NYWjS/Grande-Sakura.jpg",
+          "meaning": "Esta carta simboliza el crecimiento, el avance, el éxito.",
+          "__v": 0,
+          "cardsReverse": {
+            "clowReverse": "https://i.ibb.co/LJSmQ4f/Reverso-Clow.jpg",
+            "sakuraReverse": "https://i.ibb.co/XxrvMJ2/Reverso-Sakura.jpg"
+          }
+        }
+      ]
     }
   ]
 }

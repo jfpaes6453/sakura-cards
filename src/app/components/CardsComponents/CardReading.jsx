@@ -8,7 +8,6 @@ import { updateUserResults } from "@/utils/apiAxios";
 
 const inder = Noto_Serif_JP({ weight: ['200'], subsets: ['latin'] });
 
-
 const CardReading = () => {
 
   const [randomCards, setRandomCards] = useState([]);

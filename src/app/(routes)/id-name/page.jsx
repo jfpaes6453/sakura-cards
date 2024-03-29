@@ -17,7 +17,7 @@ export default function idName() {
         height={456}
       />
       
-      <InputComponent />
+      <InputComponent/>
 
     </div>
   );
